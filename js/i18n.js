@@ -11,84 +11,84 @@
   var META = {
     home: {
       zh: {
-        t: '芦融融 Melody Lu · 酒店品牌作品集',
+        t: 'melody作品集',
         d: '酒店市场传讯人芦融融的作品集：十五年酒店海报、文案、影像与活动案例，三亚的海是她最常用的底色。',
         k: '酒店海报设计、酒店品牌案例、酒店宣传文案、三亚酒店营销'
       },
       en: {
-        t: 'Melody Lu — Hotel Brand Portfolio',
+        t: 'Melody Portfolio',
         d: 'Portfolio of Melody Lu: fifteen years of hotel posters, copy, films and campaigns in Sanya, China.',
         k: 'hotel poster design, hotel brand case study, hotel campaign portfolio'
       }
     },
     work: {
       zh: {
-        t: '作品全览 · 酒店海报与图文 25 件',
+        t: 'melody作品集',
         d: '酒店节气海报、节日视觉、促销文案与新媒体图文模板共 25 件，康年、瑞士及美爵、铂瑞、迎宾馆、华宇五家酒店出品。',
         k: '酒店节气海报、酒店促销海报、新媒体图文模板'
       },
       en: {
-        t: 'Selected Work — Posters & Visuals',
+        t: 'Melody Portfolio',
         d: 'Twenty-five posters, campaigns and social templates for five hotels in Sanya.',
         k: 'hotel poster, hotel campaign design, social media template'
       }
     },
     videos: {
       zh: {
-        t: '影像 · 品牌动画与实拍短片',
+        t: 'melody作品集',
         d: '六条酒店影像：品牌字形动画、手绘插画、漂浮下午茶实拍与厨师 IP 酒店导览。',
         k: '酒店宣传视频、品牌动画、酒店导览视频'
       },
       en: {
-        t: 'Films — Motion & Live Action',
+        t: 'Melody Portfolio',
         d: 'Six hotel films: brand motion, hand-drawn animation, floating tea and a chef-led hotel tour.',
         k: 'hotel brand film, motion design, hotel tour video'
       }
     },
     campaigns: {
       zh: {
-        t: '活动方案 · 案例正在整理',
+        t: 'melody作品集',
         d: '完整活动方案脱敏整理中：八周年庆、达人直播与节点营销的全案记录，不日补上。',
         k: '酒店活动策划、酒店整合营销案例'
       },
       en: {
-        t: 'Campaigns — Cases in Preparation',
+        t: 'Melody Portfolio',
         d: 'Full campaign case files are being prepared for release — anniversaries, livestreams and seasonal nodes.',
         k: 'hotel campaign planning, hotel integrated marketing'
       }
     },
     links: {
       zh: {
-        t: '媒体与链接 · 清单整理中',
+        t: 'melody作品集',
         d: '媒体报道与合作链接清单整理中，每一条都将标注出处，不日补上。',
         k: '酒店媒体报道、三亚文旅传播'
       },
       en: {
-        t: 'Media & Links — Being Compiled',
+        t: 'Melody Portfolio',
         d: 'Press mentions and collaboration links, each with its source noted. Being compiled.',
         k: 'hotel press coverage, Sanya tourism PR'
       }
     },
     resume: {
       zh: {
-        t: '芦融融的履历 CV · 市场传讯总监',
+        t: 'melody作品集',
         d: '十五年酒店与地产营销传播履历：五家高端酒店与央企地产项目，抖音自播全年 GMV 300 万，达人联动核销近 600 万。可下载 PDF 简历。',
         k: '芦融融 履历, 市场传讯总监 个人简历, 酒店公关总监履历'
       },
       en: {
-        t: 'Melody Lu — Full CV',
+        t: 'Melody Portfolio',
         d: 'Fifteen years across five hotels and state-owned real estate in Sanya: ¥3M annual livestream GMV, ¥6M influencer redemptions. Download the PDF.',
         k: 'Melody Lu CV, hotel marketing director China'
       }
     },
     posters: {
       zh: {
-        t: '芦融融 · 海报作品（已并入作品全览）',
+        t: 'melody作品集',
         d: '海报与视觉作品已并入「作品全览」页：work.html，25 件作品可分类浏览。',
         k: '酒店海报设计, 酒店主视觉'
       },
       en: {
-        t: 'Melody Lu — Posters (merged into Selected Work)',
+        t: 'Melody Portfolio',
         d: 'Posters and visuals have been merged into the Selected Work page: work.html.',
         k: 'hotel poster design, hotel brand visuals'
       }
