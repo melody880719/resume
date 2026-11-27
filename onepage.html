@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>芦融融 Melody Lu · 市场传媒总监 · 综合版</title>
+<meta name="description" content="十五年市场营销与品牌传播，六年以上高星酒店市场传讯负责人。抖音自播全年 GMV 300 万，达人矩阵操盘，全域内容运营。履历、作品、影像与荣誉全览。">
+<meta property="og:title" content="芦融融 Melody Lu · 市场传媒总监">
+<meta property="og:description" content="十五年酒店与地产营销传播，作品在三亚。">
+<meta property="og:type" content="profile">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%23A8402F'/%3E%3Ctext x='32' y='44' font-family='Georgia, serif' font-size='36' fill='%23FAF7F2' text-anchor='middle'%3E%E8%9E%8D%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #0a141e; --bg-soft: #0e1a28; --panel: #12212f; --panel-2: #16283a;
+    --line: rgba(255,255,255,0.08); --gold: #c9a86a; --gold-soft: rgba(201,168,106,0.14);
+    --text: #ece8e1; --text-dim: #9a968e; --text-faint: #6d6a64;
+    --paper: #FAF7F2; --ink: #22201d; --ink-soft: #5c5852; --ink-faint: #8d8880; --accent: #A8402F;
+    --serif: "Noto Serif SC", "Songti SC", Georgia, serif;
+    --sans: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  ::selection { background: var(--gold-soft); }
+  img { display: block; max-width: 100%; }
+
+  /* ========== 封面：整齐图墙版 ========== */
+  body.cover-lock { overflow: hidden; }
+  .cover {
+    position: fixed; inset: 0; z-index: 300;
+    display: flex; flex-direction: column; padding: 0;
+    background: var(--paper);
+  }
+  .cover-band { height: 24vh; overflow: hidden; background: var(--paper); }
+  .cover-track {
+    display: flex; width: max-content; height: 100%;
+    animation: cover-marquee 90s linear infinite; will-change: transform;
+  }
+  .cover-band--bottom .cover-track { animation-direction: reverse; animation-duration: 100s; }
+  .cover-track img {
+    display: block; height: 100%; width: auto; flex: none; margin-right: 6px;
+    object-fit: contain; filter: saturate(1.05);
+  }
+  @keyframes cover-marquee { to { transform: translateX(-50%); } }
+  .cover__mid {
+    flex: 1 1 auto; min-height: 52vh;
+    display: flex; align-items: center; justify-content: center;
+    border-top: 1px solid rgba(34,32,29,0.16); border-bottom: 1px solid rgba(34,32,29,0.16);
+    background: var(--paper);
+  }
+  .cover__inner { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 34px 20px; width: min(760px, 92vw); }
+  /* 眉题 */
+  .cover__eyebrow { margin: 0 0 22px; font-family: var(--sans); font-size: 11.5px; font-weight: 500; letter-spacing: .3em; text-indent: .3em; color: #ffffff; text-transform: uppercase; text-shadow: 0 1px 12px rgba(2,20,40,.9); animation: cover-in 400ms ease backwards; }
+  .cover__eyebrow span { color: rgba(255,255,255,.45); padding: 0 .5em; }
+  /* 主名：细体衬线、大字距，去掉粗重感 */
+  .cover__name {
+    font-family: Georgia, "Times New Roman", var(--serif); font-size: clamp(46px, 8.2vw, 104px);
+    line-height: 1.08; font-weight: 400; letter-spacing: .13em; text-indent: .13em;
+    color: #fbfdff; text-shadow: 0 3px 30px rgba(2,20,40,.9), 0 1px 6px rgba(2,20,40,.6);
+    animation: cover-in 480ms ease backwards;
+  }
+  /* 钻石分隔线 */
+  .cover__divider { display: flex; align-items: center; gap: 14px; width: min(320px, 60vw); margin: 26px 0 22px; animation: cover-in 480ms ease 60ms backwards; }
+  .cover__divider span { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.85)); box-shadow: 0 1px 6px rgba(2,20,40,.6); }
+  .cover__divider span:last-child { background: linear-gradient(90deg, rgba(255,255,255,.85), transparent); box-shadow: 0 1px 6px rgba(2,20,40,.6); }
+  .cover__divider i { width: 5px; height: 5px; background: rgba(255,255,255,.85); transform: rotate(45deg); flex: none; }
+  /* 副标：小字、大字距、细分隔 */
+  .cover-tagline { margin: 0; font-family: var(--sans); font-size: 13px; line-height: 2.1; letter-spacing: .2em; text-indent: .2em; color: #ffffff; text-shadow: 0 1px 14px rgba(2,20,40,.95), 0 0 4px rgba(2,20,40,.7); animation: cover-in 480ms ease 100ms backwards; }
+  .cover-tagline__dot { color: rgba(255,255,255,.45); font-style: normal; padding: 0 .55em; font-size: 11px; }
+  /* 按钮：细线框 + 箭头 */
+  .cover__gate {
+    margin-top: 42px; appearance: none; background: rgba(8,38,64,.28); color: #fbfdff;
+    border: 1px solid rgba(255,255,255,.55); border-radius: 1px; height: 52px; padding: 0 30px 0 42px;
+    font-family: var(--sans); font-size: 13px; font-weight: 500; letter-spacing: .34em; text-indent: .34em; cursor: pointer;
+    backdrop-filter: blur(6px); animation: cover-in 480ms ease 160ms backwards;
+    transition: background .3s, border-color .3s, color .3s;
+  }
+  .cover__gate .cover__arrow { display: inline-block; margin-left: 20px; font-size: 15px; letter-spacing: 0; transition: transform .3s; }
+  .cover__gate:hover { background: rgba(251,253,255,.92); border-color: rgba(251,253,255,.92); color: #123a5c; }
+  .cover__gate:hover .cover__arrow { transform: translateX(5px); }
+  .cover__gate { position: relative; z-index: 3; }
+  @keyframes cover-in { from { opacity: 0; transform: translateY(18px); } }
+  .cover.revealing, .cover.revealing .cover__inner { transition: transform 600ms ease; }
+  .cover.revealing { transform: translateY(-100%); }
+  .cover.revealing .cover__inner { transform: translateY(-32%); }
+  @media (max-width: 767px) {
+    .cover-band { height: 16vh; }
+    .cover__gate { width: min(100%, 280px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cover-track, .cover__name, .cover__gate, .sea-layer { animation: none; }
+    .cover.revealing, .cover.revealing .cover__inner { transition: none; }
+  }
+
+  /* ========== 导航 ========== */
+  nav.top {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 6vw; background: rgba(9,18,28,0.82);
+    backdrop-filter: blur(12px); border-bottom: 1px solid var(--line);
+    opacity: 0; pointer-events: none; transition: opacity .5s;
+  }
+  body.cover-open nav.top { opacity: 1; pointer-events: auto; }
+  .nav-logo { font-family: var(--serif); font-size: 17px; letter-spacing: 3px; color: var(--gold); text-decoration: none; }
+  .nav-links { display: flex; gap: 26px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 13px; letter-spacing: 2px; transition: color .3s; }
+  .nav-links a:hover { color: var(--gold); }
+  #lang-toggle { border: 1px solid var(--gold); background: none; color: var(--gold); font-size: 12px; letter-spacing: 2px; padding: 5px 12px; cursor: pointer; border-radius: 2px; font-family: var(--sans); transition: background .3s; }
+  #lang-toggle:hover { background: var(--gold-soft); }
+  @media (max-width: 640px) { .nav-links { gap: 12px; } .nav-links a { font-size: 11px; letter-spacing: 1px; } }
+
+  /* ========== Hero ========== */
+  .hero { min-height: 100vh; display: flex; align-items: center; padding: 130px 6vw 90px; position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; top: -20%; right: -8%;
+    width: 55vw; height: 55vw; max-width: 700px; max-height: 700px;
+    background: radial-gradient(circle, rgba(201,168,106,0.10) 0%, transparent 65%); pointer-events: none;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 56px; align-items: center; width: 100%; }
+  @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } .hero-portrait { max-width: 300px; } }
+  .hero-kicker { color: var(--gold); font-size: 13px; letter-spacing: 6px; margin-bottom: 22px; font-weight: 500; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(28px, 3.6vw, 46px); font-weight: 600; letter-spacing: 3px; line-height: 1.7; }
+  .hero h1 .thin { color: var(--text-dim); font-weight: 300; }
+  html[lang="en"] .hero h1 { font-size: clamp(23px, 2.6vw, 34px); letter-spacing: 1px; line-height: 1.6; }
+  .hero-name { margin-top: 18px; font-size: 17px; letter-spacing: 3px; }
+  .hero-name small { color: var(--text-faint); letter-spacing: 2px; font-weight: 400; }
+  .hero-quote { margin-top: 22px; color: var(--text-faint); font-size: 13px; letter-spacing: 3px; }
+  .hero-tags { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .hero-tags span { border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; font-size: 12.5px; color: var(--text-dim); letter-spacing: 1px; }
+  .hero-cta { margin-top: 42px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .btn { position: relative; overflow: hidden; text-decoration: none; padding: 13px 32px; font-size: 14px; letter-spacing: 3px; border-radius: 2px; transition: all .35s ease; display: inline-block; cursor: pointer; background: none; font-family: var(--sans); }
+  .btn:hover { transform: translateY(-2px); }
+  .btn::after { content: ""; position: absolute; top: 0; left: -120%; width: 60%; height: 100%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.28), transparent); transform: skewX(-20deg); transition: left .7s ease; pointer-events: none; }
+  .btn:hover::after { left: 140%; }
+  .btn-gold { background: var(--gold); color: #14100a; border: 1px solid var(--gold); }
+  .btn-gold:hover { background: transparent; color: var(--gold); }
+  .btn-ghost { border: 1px solid var(--line); color: var(--text-dim); }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+  .hero-portrait { position: relative; }
+  .hero-portrait img { width: 100%; height: auto; aspect-ratio: 640 / 636; object-fit: cover; object-position: center 22%; border: 1px solid var(--line); }
+  .hero-portrait::after { content: ""; position: absolute; inset: 14px -14px -14px 14px; border: 1px solid rgba(201,168,106,0.35); z-index: -1; }
+
+  /* ========== 区块通用 ========== */
+  section { padding: 100px 6vw; border-top: 1px solid var(--line); }
+  .sec-head { margin-bottom: 52px; }
+  .sec-index { color: var(--gold); font-size: 12px; letter-spacing: 4px; display: block; margin-bottom: 14px; }
+  .sec-title { font-family: var(--serif); font-size: clamp(28px, 4vw, 38px); font-weight: 600; letter-spacing: 4px; }
+  .sec-line { width: 56px; height: 1px; background: var(--gold); margin-top: 22px; opacity: .6; }
+
+  /* ========== 数据 ========== */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .stat { background: var(--bg-soft); padding: 32px 18px; text-align: center; }
+  .stat-num { font-family: var(--serif); font-size: clamp(22px, 3.0vw, 36px); color: var(--gold); font-weight: 600; letter-spacing: 1px; }
+  .stat-label { margin-top: 10px; color: var(--text-dim); font-size: 12.5px; letter-spacing: 2px; }
+  @media (max-width: 760px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+  /* ========== 关于 ========== */
+  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
+  .about-text p { color: var(--text-dim); font-size: 15px; margin-bottom: 20px; }
+  .about-text strong { color: var(--text); font-weight: 500; }
+  .about-card { background: var(--panel); border: 1px solid var(--line); padding: 32px 28px; }
+  .about-card h3 { font-family: var(--serif); font-size: 16px; color: var(--gold); letter-spacing: 3px; margin-bottom: 18px; font-weight: 500; }
+  .about-card ul { list-style: none; }
+  .about-card li { color: var(--text-dim); font-size: 13.5px; padding: 8px 0; border-bottom: 1px dashed var(--line); letter-spacing: 1px; }
+  .about-card li:last-child { border-bottom: none; }
+
+  /* ========== 时间线 ========== */
+  .timeline { position: relative; margin-left: 8px; }
+  .timeline::before { content: ""; position: absolute; left: 0; top: 6px; bottom: 6px; width: 1px; background: linear-gradient(var(--gold), var(--line)); }
+  .t-item { position: relative; padding: 0 0 46px 34px; }
+  .t-item:last-child { padding-bottom: 0; }
+  .t-item::before { content: ""; position: absolute; left: -5px; top: 8px; width: 11px; height: 11px; background: var(--bg); border: 1px solid var(--gold); transform: rotate(45deg); }
+  .t-time { color: var(--gold); font-size: 13px; letter-spacing: 3px; }
+  .t-role { font-family: var(--serif); font-size: 20px; letter-spacing: 2px; margin: 10px 0 4px; font-weight: 600; }
+  .t-org { color: var(--text-dim); font-size: 14px; letter-spacing: 1px; margin-bottom: 14px; }
+  .t-desc { color: var(--text-dim); font-size: 14px; max-width: 760px; }
+  .t-desc li { margin-left: 18px; margin-bottom: 6px; }
+  .t-desc li b { color: var(--text); font-weight: 500; }
+  .t-compact { position: relative; padding: 6px 0 0 34px; color: var(--text-faint); font-size: 13px; letter-spacing: 1px; }
+  .t-compact::before { content: ""; position: absolute; left: -2px; top: 14px; width: 5px; height: 5px; background: var(--text-faint); transform: rotate(45deg); }
+
+  /* ========== 能力 ========== */
+  .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .skills { grid-template-columns: 1fr; } }
+  .skill { background: var(--panel); border: 1px solid var(--line); padding: 28px 26px; transition: border-color .3s, transform .3s; }
+  .skill:hover { border-color: rgba(201,168,106,0.45); transform: translateY(-3px); }
+  .skill-num { color: var(--text-faint); font-size: 12px; letter-spacing: 3px; }
+  .skill h3 { font-family: var(--serif); font-size: 17px; letter-spacing: 2px; margin: 10px 0 10px; font-weight: 500; }
+  .skill p { color: var(--text-dim); font-size: 13.5px; }
+
+  /* ========== 作品筛选 ========== */
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
+  .filter-btn { border: 1px solid var(--line); background: none; color: var(--text-dim); padding: 8px 20px; font-size: 13px; letter-spacing: 2px; cursor: pointer; transition: all .3s; font-family: var(--sans); }
+  .filter-btn .f-count { color: var(--text-faint); font-size: 11px; margin-left: 6px; }
+  .filter-btn[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); background: var(--gold-soft); }
+
+  /* ========== 分组缩略图 ========== */
+  .wgroup { margin-bottom: 48px; }
+  .wgroup .group-head { margin: 0 0 16px; }
+  .mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 12px; }
+  @media (max-width: 620px) { .mini-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 9px; } }
+  .mini { margin: 0; cursor: pointer; overflow: hidden; background: var(--panel); border: 1px solid var(--line); transition: border-color .3s, transform .3s, box-shadow .3s; }
+  .mini:hover { border-color: rgba(201,168,106,0.55); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,0.35); }
+  .mini img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; transition: transform .45s ease; }
+  .mini:hover img { transform: scale(1.05); }
+  .mini figcaption { padding: 7px 9px; font-size: 11px; color: var(--text-dim); letter-spacing: 1.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top: 1px solid var(--line); }
+  .wc-body { padding: 14px 16px 16px; }
+  .wc-title { display: block; color: var(--text); font-size: 14.5px; letter-spacing: 1px; }
+  .wc-meta { display: block; color: var(--text-faint); font-size: 12px; margin-top: 3px; letter-spacing: 1px; }
+  .wc-cat { display: inline-block; color: var(--gold); font-size: 11px; letter-spacing: 2px; margin-bottom: 6px; }
+  .works-note { margin-top: 22px; color: var(--text-faint); font-size: 13px; letter-spacing: 1px; border-left: 2px solid var(--gold); padding-left: 14px; }
+
+  /* ========== 特写 ========== */
+  .featured-split { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; margin-bottom: 56px; }
+  @media (max-width: 860px) { .featured-split { grid-template-columns: 1fr; } }
+  .featured-media img { width: 100%; border: 1px solid var(--line); cursor: pointer; }
+  .featured-note .case-no { color: var(--gold); font-size: 11px; letter-spacing: 4px; margin-bottom: 14px; }
+  .featured-note h3 { font-family: var(--serif); font-size: 26px; letter-spacing: 2px; font-weight: 600; margin-bottom: 14px; }
+  .featured-note p { color: var(--text-dim); font-size: 14.5px; max-width: 480px; }
+  .featured-note .case-src { margin-top: 14px; color: var(--text-faint); font-size: 12.5px; letter-spacing: 1px; }
+
+  /* ========== 影像 ========== */
+  .film-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: 14px; margin-bottom: 26px; }
+  @media (max-width: 620px) { .film-grid { grid-template-columns: repeat(auto-fill, minmax(136px, 1fr)); gap: 10px; } }
+  .video-card { background: var(--panel); border: 1px solid var(--line); overflow: hidden; transition: border-color .3s; }
+  .video-card:hover { border-color: rgba(201,168,106,0.45); }
+  .video-card.cinema { margin-bottom: 0; }
+  .video-media { position: relative; aspect-ratio: 4 / 3; background: var(--panel-2); overflow: hidden; }
+  .video-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .45s ease; }
+  .video-card:hover .video-media img { transform: scale(1.05); }
+  .video-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(6,20,32,.42)); pointer-events: none; }
+  .play-btn { position: absolute; inset: 0; margin: auto; width: 44px; height: 44px; border-radius: 50%; background: rgba(9,18,28,0.62); border: 1px solid var(--gold); color: var(--gold); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background .3s, transform .3s; z-index: 2; }
+  .play-btn svg { width: 17px; height: 17px; margin-left: 3px; }
+  .play-btn:hover { background: rgba(201,168,106,0.28); transform: scale(1.08); }
+  .dur-badge { position: absolute; right: 8px; bottom: 8px; background: rgba(9,18,28,0.8); border: 1px solid var(--line); color: var(--text-dim); font-size: 10px; padding: 2px 7px; letter-spacing: 1px; z-index: 2; }
+  .video-caption { padding: 9px 11px 11px; }
+  .video-caption .wc-title { font-size: 13px; }
+  .video-caption .wc-meta { font-size: 11px; }
+  .video-card video { width: 100%; display: block; background: #000; aspect-ratio: 4 / 3; object-fit: contain; }
+  .group-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin: 34px 0 16px; flex-wrap: wrap; }
+  .group-head h3 { font-family: var(--serif); font-size: 20px; letter-spacing: 2px; font-weight: 500; }
+  .group-count { color: var(--text-faint); font-size: 12.5px; letter-spacing: 1px; }
+
+  /* ========== 荣誉 ========== */
+  .awards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 36px; }
+  @media (max-width: 900px) { .awards { grid-template-columns: repeat(2, 1fr); } }
+  .award { background: var(--panel); border: 1px solid var(--line); padding: 16px; }
+  .award img { width: 100%; }
+  .award figcaption { color: var(--text-dim); font-size: 12.5px; margin-top: 10px; letter-spacing: 1px; text-align: center; }
+  .honor-list { list-style: none; }
+  .honor-item { padding: 16px 0; border-bottom: 1px dashed var(--line); }
+  .honor-item:last-child { border-bottom: none; }
+  .honor-name { font-size: 15px; font-weight: 500; letter-spacing: 1px; }
+  .honor-meta { color: var(--text-faint); font-size: 12.5px; margin-top: 4px; letter-spacing: 1px; }
+
+  /* ========== 联系 ========== */
+  .contact { text-align: center; }
+  .contact .sec-line { margin-left: auto; margin-right: auto; }
+  .contact-list { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-bottom: 30px; }
+  .contact-item { display: flex; align-items: center; gap: 12px; background: var(--panel); border: 1px solid var(--line); padding: 13px 24px; color: var(--text-dim); font-size: 14px; letter-spacing: 1px; text-decoration: none; transition: border-color .3s, color .3s; }
+  a.contact-item:hover { border-color: var(--gold); color: var(--gold); }
+  .contact-item b { color: var(--text-faint); font-weight: 400; font-size: 12px; letter-spacing: 2px; }
+  .wechat-card { display: inline-flex; flex-direction: column; align-items: center; gap: 12px; background: #fff; border: 1px solid var(--gold); padding: 16px 16px 14px; margin-bottom: 38px; }
+  .wechat-card a { display: block; line-height: 0; }
+  .wechat-card img { width: 200px; height: auto; display: block; }
+  .wechat-card__meta { color: #2b2b2b; font-size: 12.5px; letter-spacing: 2px; }
+  .wechat-card__meta b { color: #8a7a5c; font-weight: 500; letter-spacing: 3px; margin-right: 8px; }
+  .wechat-card__hint { color: #8a8a8a; font-size: 11.5px; letter-spacing: 1px; }
+
+  footer { border-top: 1px solid var(--line); padding: 30px 6vw; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: var(--text-faint); font-size: 12px; letter-spacing: 2px; }
+
+  /* ========== 灯箱 ========== */
+  dialog.lightbox { border: none; background: rgba(10,10,13,0.96); padding: 0; max-width: 92vw; max-height: 92vh; }
+  dialog.lightbox::backdrop { background: radial-gradient(120% 100% at 50% 18%, rgba(28,30,34,.94) 0%, rgba(16,17,20,.95) 55%, rgba(8,9,11,.97) 100%); }
+  .lb-img { max-width: 92vw; max-height: 84vh; object-fit: contain; }
+  .lb-bar { display: flex; gap: 16px; padding: 12px 18px; color: var(--text-dim); font-size: 13px; letter-spacing: 1px; align-items: baseline; }
+  .lb-title { color: var(--text); }
+  .lb-close { position: fixed; top: 18px; right: 22px; background: none; border: 1px solid var(--line); color: var(--text-dim); width: 42px; height: 42px; cursor: pointer; font-size: 18px; }
+  .lb-close:hover { color: var(--gold); border-color: var(--gold); }
+
+  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.on { opacity: 1; transform: none; }
+
+  /* ========== 海浪动效（多层波浪 + 浪花） ========== */
+  .sea-band { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(110px, 15vw, 200px); overflow: hidden; pointer-events: none; z-index: 0; }
+  .sea-glow { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 0%, rgba(168,216,234,0.28) 42%, rgba(90,170,205,0.18) 100%); }
+  .sea-band::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(233,247,252,.55) 0%, rgba(233,247,252,0) 58%); mix-blend-mode: screen; pointer-events: none; }
+  .sea-layer { position: absolute; left: 0; bottom: 0; width: 200%; height: 100%; will-change: transform; }
+  .sea-layer svg { display: block; width: 100%; height: 100%; }
+  .sea-layer--1 { animation: sea-drift 30s linear infinite; opacity: .78; filter: blur(1.5px); }
+  .sea-layer--2 { animation: sea-drift 23s linear infinite reverse; opacity: .86; filter: blur(.8px); }
+  .sea-layer--3 { animation: sea-drift 17s linear infinite; opacity: .9; }
+  .sea-layer--4 { animation: sea-drift 12s linear infinite reverse; }
+  .sea-layer--foam { animation: sea-drift 9s linear infinite; opacity: .9; }
+  @keyframes sea-drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .sea-band--soft { -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 42%); mask-image: linear-gradient(180deg, transparent 0%, #000 42%); }
+  .sea-band--small { height: clamp(70px, 9vw, 120px); }
+
+  /* Hero：进入后的第一屏海浪 */
+  .hero { padding-top: clamp(84px, 7vw, 98px); padding-bottom: clamp(120px, 11vw, 150px); }
+  .hero-grid { position: relative; z-index: 2; }
+  /* Hero 底部：金色流光 · 悬浮微粒（深色金调，动态） */
+  .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 280px; background: linear-gradient(180deg, transparent 0%, rgba(201,168,106,.035) 55%, rgba(201,168,106,.075) 100%); pointer-events: none; z-index: 0; }
+  .hero-aurora { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(170px, 19vw, 250px); overflow: hidden; pointer-events: none; z-index: 1; }
+  .aurora-glow { position: absolute; left: 50%; bottom: -28%; width: 92%; height: 130%; transform: translateX(-50%); background: radial-gradient(ellipse at center, rgba(201,168,106,.20) 0%, rgba(201,168,106,.07) 36%, transparent 70%); animation: aurora-breathe 9s ease-in-out infinite alternate; }
+  @keyframes aurora-breathe { from { opacity: .42; transform: translateX(-50%) scale(.92); } to { opacity: 1; transform: translateX(-50%) scale(1.08); } }
+  .aurora-lines { position: absolute; inset: 0; }
+  .al { position: absolute; left: 0; bottom: 0; width: 200%; height: 100%; will-change: transform; }
+  .al--1 { animation: aurora-drift 54s linear infinite; }
+  .al--2 { animation: aurora-drift 76s linear infinite reverse; }
+  .al--3 { animation: aurora-drift 98s linear infinite; }
+  @keyframes aurora-drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .aurora-motes { position: absolute; inset: 0; }
+  .aurora-motes i { position: absolute; left: var(--x); top: var(--y); width: var(--s); height: var(--s); border-radius: 50%; background: #f3e0b8; box-shadow: 0 0 11px 2px rgba(201,168,106,.6); opacity: 0; animation: mote-float var(--t) ease-in-out infinite; animation-delay: var(--d); }
+  @keyframes mote-float { 0% { opacity: 0; transform: translateY(10px) scale(.5); } 25% { opacity: .8; } 70% { opacity: .45; } 100% { opacity: 0; transform: translateY(-36px) scale(1.1); } }
+  @media (prefers-reduced-motion: reduce) { .aurora-glow, .al, .aurora-motes i { animation: none; } .aurora-motes i { opacity: .5; } }
+  /* 金色装饰带（生活卡片 / 灯箱底部） */
+  .gold-band { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(70px, 9vw, 120px); overflow: hidden; pointer-events: none; z-index: 0; }
+  .gold-band__glow { position: absolute; inset: 0; background: radial-gradient(120% 100% at 50% 100%, rgba(201,168,106,.14) 0%, rgba(201,168,106,.04) 45%, transparent 75%); }
+  .gold-band__line { position: absolute; left: 0; bottom: 0; width: 200%; height: 100%; will-change: transform; }
+  .gold-band__line--1 { animation: aurora-drift 64s linear infinite; }
+  .gold-band__line--2 { animation: aurora-drift 88s linear infinite reverse; }
+  .gold-band svg { display: block; width: 100%; height: 100%; }
+  @media (prefers-reduced-motion: reduce) { .gold-band__line { animation: none; } }
+
+  /* 封面：手绘海面 + 真实水波翻涌 */
+  .cover { position: fixed; }
+  .cover__mid { position: relative; background: linear-gradient(180deg, #e9f6fc 0%, #c6e5f2 100%); overflow: hidden; }
+  .cover__inner { position: relative; z-index: 2; }
+  .cover-band { position: relative; z-index: 2; }
+  .cover .sea-band--uki { z-index: 1; height: 100%; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 6%, #000 93%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0%, #000 6%, #000 93%, transparent 100%); }
+  .cover__inner { text-shadow: 0 2px 18px rgba(246,252,254,.96); }
+  .cover__inner::before { background: radial-gradient(ellipse at center, rgba(4,28,52,.58) 0%, rgba(4,28,52,.32) 44%, rgba(4,28,52,0) 80%) !important; height: 330px !important; width: min(1020px, 96vw) !important; }
+  .cover__inner::before { content: ""; position: absolute; left: 50%; top: 50%; width: min(1120px, 97vw); height: 250px; transform: translate(-50%,-50%); background: radial-gradient(ellipse at center, rgba(240,250,253,.66) 0%, rgba(240,250,253,.4) 46%, rgba(240,250,253,0) 80%); pointer-events: none; z-index: -1; }
+  .cover .sea-band--uki::after { display: none; }
+  .cover .sea-art { position: absolute; inset: 0; overflow: hidden; }
+  .cover .sea-art > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .cover .sea-art .sea-glint { animation: seaGlint 7s ease-in-out infinite alternate; }
+  @keyframes seaGlint { from { opacity: .2; } to { opacity: .55; } }
+  @media (max-width: 700px) { .cover .sea-band--uki { height: 100%; } .cover__inner::before { height: 320px !important; } .cover__eyebrow { letter-spacing: .18em; text-indent: .18em; font-size: 10px; } .cover-tagline { font-size: 10.5px; letter-spacing: .04em; text-indent: .04em; white-space: nowrap; } .cover-tagline__dot { padding: 0 .16em; } .cover__inner { width: min(760px, 96vw); } .cover__name { font-size: clamp(38px, 11vw, 60px); } .cover__gate { padding: 0 22px 0 32px; letter-spacing: .24em; text-indent: .24em; } }
+  @media (prefers-reduced-motion: reduce) { .cover .sea-art .sea-glint { animation: none; } }
+
+  /* 灯箱：点开之后的页面 */
+  dialog.lightbox { position: fixed; inset: 0; margin: auto; width: fit-content; height: fit-content; max-width: 92vw; max-height: 92vh; overflow: hidden; background: radial-gradient(130% 110% at 50% -12%, #1f2431 0%, #141923 38%, #0e1218 68%, #090b0f 100%); }
+  dialog.lightbox::after { content: ""; position: absolute; left: 0; right: 0; top: 34%; height: 32%; background: linear-gradient(180deg, transparent 0%, rgba(201,168,106,.07) 45%, transparent 100%); pointer-events: none; z-index: 1; }
+  dialog.lightbox .gold-band { z-index: 0; opacity: .8; }
+  .lb-img, .lb-video { position: relative; z-index: 2; }
+  .lb-video { display: none; max-width: 92vw; max-height: 80vh; background: #000; }
+  dialog.lightbox.is-video .lb-img { display: none; }
+  dialog.lightbox.is-video .lb-video { display: block; }
+  .lb-bar { position: relative; z-index: 2; }
+  .lb-close { z-index: 3; }
+
+  /* ========== 生活板块 ========== */
+  .life-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 48px; align-items: center; }
+  @media (max-width: 860px) { .life-grid { grid-template-columns: 1fr; } }
+  .life-media { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); background: linear-gradient(160deg, #14202e 0%, #0e1722 48%, #0a1119 100%); }
+  .life-media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+  .life-media .play-btn { width: 62px; height: 62px; }
+  .life-media .play-btn svg { width: 22px; height: 22px; }
+  .life-media__label { position: absolute; left: 22px; bottom: 20px; z-index: 2; color: #fff; font-family: var(--serif); font-size: 18px; letter-spacing: 2px; text-shadow: 0 1px 10px rgba(0,0,0,.65); }
+  .life-media__hint { position: absolute; right: 18px; top: 16px; z-index: 2; color: rgba(233,214,178,.92); font-size: 11px; letter-spacing: 1.5px; border: 1px solid rgba(201,168,106,.45); padding: 4px 10px; border-radius: 2px; }
+  .life-media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; z-index: 3; }
+  .life-note h3 { font-family: var(--serif); font-size: 22px; letter-spacing: 2px; font-weight: 500; margin-bottom: 16px; }
+  .life-note p { color: var(--text-dim); font-size: 14.5px; margin-bottom: 24px; }
+  .life-note .btn { font-size: 13px; padding: 11px 26px; }
+</style>
+</head>
+<body class="cover-lock">
+
+<!-- ========== 封面：轮动图带（沿用原站版本） ========== -->
+<div class="cover" id="cover">
+  <div class="cover-band cover-band--top" aria-hidden="true">
+    <div class="cover-track"><img src="assets/cover-thumbs/p-kn-01.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-01.jpg" alt=""><img src="assets/cover-thumbs/p-hy-01.jpg" alt=""><img src="assets/cover-thumbs/p-ld-01.jpg" alt=""><img src="assets/cover-thumbs/p-team-01.jpg" alt=""><img src="assets/cover-thumbs/p-kn-02.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-02.jpg" alt=""><img src="assets/cover-thumbs/p-hy-02.jpg" alt=""><img src="assets/cover-thumbs/p-ld-02.jpg" alt=""><img src="assets/cover-thumbs/p-team-02.jpg" alt=""><img src="assets/cover-thumbs/p-kn-03.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-03.jpg" alt=""><img src="assets/cover-thumbs/p-hy-03.jpg" alt=""><img src="assets/cover-thumbs/p-ld-03.jpg" alt=""><img src="assets/cover-thumbs/p-team-03.jpg" alt=""><img src="assets/cover-thumbs/p-kn-04.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-04.jpg" alt=""><img src="assets/cover-thumbs/p-hy-04.jpg" alt=""><img src="assets/cover-thumbs/p-ld-04.jpg" alt=""><img src="assets/cover-thumbs/p-team-04.jpg" alt=""><img src="assets/cover-thumbs/p-kn-05.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-05.jpg" alt=""><img src="assets/cover-thumbs/p-hy-05.jpg" alt=""><img src="assets/cover-thumbs/p-ld-05.jpg" alt=""><img src="assets/cover-thumbs/p-team-05.jpg" alt=""><img src="assets/cover-thumbs/p-kn-06.jpg" alt=""><img src="assets/cover-thumbs/p-hy-06.jpg" alt=""><img src="assets/cover-thumbs/p-ld-06.jpg" alt=""><img src="assets/cover-thumbs/p-team-06.jpg" alt=""><img src="assets/cover-thumbs/p-kn-07.jpg" alt=""><img src="assets/cover-thumbs/p-hy-07.jpg" alt=""><img src="assets/cover-thumbs/p-ld-07.jpg" alt=""><img src="assets/cover-thumbs/p-team-07.jpg" alt=""><img src="assets/cover-thumbs/p-kn-08.jpg" alt=""><img src="assets/cover-thumbs/p-hy-08.jpg" alt=""><img src="assets/cover-thumbs/p-ld-08.jpg" alt=""><img src="assets/cover-thumbs/p-team-08.jpg" alt=""><img src="assets/cover-thumbs/p-kn-09.jpg" alt=""><img src="assets/cover-thumbs/p-hy-09.jpg" alt=""><img src="assets/cover-thumbs/p-ld-09.jpg" alt=""><img src="assets/cover-thumbs/p-team-09.jpg" alt=""><img src="assets/cover-thumbs/p-kn-10.jpg" alt=""><img src="assets/cover-thumbs/p-hy-10.jpg" alt=""><img src="assets/cover-thumbs/p-ld-10.jpg" alt=""><img src="assets/cover-thumbs/p-team-10.jpg" alt=""><img src="assets/cover-thumbs/p-kn-11.jpg" alt=""><img src="assets/cover-thumbs/p-hy-11.jpg" alt=""><img src="assets/cover-thumbs/p-ld-11.jpg" alt=""><img src="assets/cover-thumbs/p-team-11.jpg" alt=""><img src="assets/cover-thumbs/p-kn-12.jpg" alt=""><img src="assets/cover-thumbs/p-hy-12.jpg" alt=""><img src="assets/cover-thumbs/p-team-12.jpg" alt=""><img src="assets/cover-thumbs/p-kn-13.jpg" alt=""><img src="assets/cover-thumbs/p-team-13.jpg" alt=""><img src="assets/cover-thumbs/p-kn-01.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-01.jpg" alt=""><img src="assets/cover-thumbs/p-hy-01.jpg" alt=""><img src="assets/cover-thumbs/p-ld-01.jpg" alt=""><img src="assets/cover-thumbs/p-team-01.jpg" alt=""><img src="assets/cover-thumbs/p-kn-02.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-02.jpg" alt=""><img src="assets/cover-thumbs/p-hy-02.jpg" alt=""><img src="assets/cover-thumbs/p-ld-02.jpg" alt=""><img src="assets/cover-thumbs/p-team-02.jpg" alt=""><img src="assets/cover-thumbs/p-kn-03.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-03.jpg" alt=""><img src="assets/cover-thumbs/p-hy-03.jpg" alt=""><img src="assets/cover-thumbs/p-ld-03.jpg" alt=""><img src="assets/cover-thumbs/p-team-03.jpg" alt=""><img src="assets/cover-thumbs/p-kn-04.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-04.jpg" alt=""><img src="assets/cover-thumbs/p-hy-04.jpg" alt=""><img src="assets/cover-thumbs/p-ld-04.jpg" alt=""><img src="assets/cover-thumbs/p-team-04.jpg" alt=""><img src="assets/cover-thumbs/p-kn-05.jpg" alt=""><img src="assets/cover-thumbs/p-ylg-05.jpg" alt=""><img src="assets/cover-thumbs/p-hy-05.jpg" alt=""><img src="assets/cover-thumbs/p-ld-05.jpg" alt=""><img src="assets/cover-thumbs/p-team-05.jpg" alt=""><img src="assets/cover-thumbs/p-kn-06.jpg" alt=""><img src="assets/cover-thumbs/p-hy-06.jpg" alt=""><img src="assets/cover-thumbs/p-ld-06.jpg" alt=""><img src="assets/cover-thumbs/p-team-06.jpg" alt=""><img src="assets/cover-thumbs/p-kn-07.jpg" alt=""><img src="assets/cover-thumbs/p-hy-07.jpg" alt=""><img src="assets/cover-thumbs/p-ld-07.jpg" alt=""><img src="assets/cover-thumbs/p-team-07.jpg" alt=""><img src="assets/cover-thumbs/p-kn-08.jpg" alt=""><img src="assets/cover-thumbs/p-hy-08.jpg" alt=""><img src="assets/cover-thumbs/p-ld-08.jpg" alt=""><img src="assets/cover-thumbs/p-team-08.jpg" alt=""><img src="assets/cover-thumbs/p-kn-09.jpg" alt=""><img src="assets/cover-thumbs/p-hy-09.jpg" alt=""><img src="assets/cover-thumbs/p-ld-09.jpg" alt=""><img src="assets/cover-thumbs/p-team-09.jpg" alt=""><img src="assets/cover-thumbs/p-kn-10.jpg" alt=""><img src="assets/cover-thumbs/p-hy-10.jpg" alt=""><img src="assets/cover-thumbs/p-ld-10.jpg" alt=""><img src="assets/cover-thumbs/p-team-10.jpg" alt=""><img src="assets/cover-thumbs/p-kn-11.jpg" alt=""><img src="assets/cover-thumbs/p-hy-11.jpg" alt=""><img src="assets/cover-thumbs/p-ld-11.jpg" alt=""><img src="assets/cover-thumbs/p-team-11.jpg" alt=""><img src="assets/cover-thumbs/p-kn-12.jpg" alt=""><img src="assets/cover-thumbs/p-hy-12.jpg" alt=""><img src="assets/cover-thumbs/p-team-12.jpg" alt=""><img src="assets/cover-thumbs/p-kn-13.jpg" alt=""><img src="assets/cover-thumbs/p-team-13.jpg" alt=""></div>
+  </div>
+  <div class="cover__mid">
+    <div class="cover__inner">
+      <p class="cover__eyebrow">作品集 Portfolio <span>·</span> 2026</p>
+      <h1 class="cover__name">Melody Lu</h1>
+      <div class="cover__divider" aria-hidden="true"><span></span><i></i><span></span></div>
+      <p class="cover-tagline">AI 运用 <i class="cover-tagline__dot">·</i> 品牌调性 <i class="cover-tagline__dot">·</i> 审美 <i class="cover-tagline__dot">·</i> 文字表达 <i class="cover-tagline__dot">·</i> 自媒体运营</p>
+      <button class="cover__gate" id="enter" type="button" aria-label="进入站点">进入<span class="cover__arrow" aria-hidden="true">→</span></button>
+    </div>
+<div class="sea-band sea-band--uki" aria-hidden="true">
+<div class="sea-art"><svg viewBox="0 0 1440 340" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <filter id="seaWarp" x="-10%" y="-14%" width="120%" height="128%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.009 0.018" numOctaves="2" seed="5" result="nz"/>
+    <feOffset in="nz" dx="0" dy="0" result="nzm">
+      <animate attributeName="dx" dur="19s" values="0;90;0" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" repeatCount="indefinite"/>
+      <animate attributeName="dy" dur="13s" values="0;-36;0" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" repeatCount="indefinite"/>
+    </feOffset>
+    <feDisplacementMap in="SourceGraphic" in2="nzm" scale="18" xChannelSelector="R" yChannelSelector="G">
+      <animate attributeName="scale" dur="8s" values="13;24;13" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" repeatCount="indefinite"/>
+    </feDisplacementMap>
+  </filter>
+  <linearGradient id="seaSheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".3"/>
+    <stop offset=".3" stop-color="#cdeef9" stop-opacity="0"/>
+    <stop offset="1" stop-color="#06365c" stop-opacity=".2"/>
+  </linearGradient>
+</defs>
+<g>
+  <animateTransform attributeName="transform" type="translate" dur="7s" values="0 0;0 -6;0 3;0 0" calcMode="spline" keyTimes="0;0.35;0.7;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1" repeatCount="indefinite"/>
+  <g filter="url(#seaWarp)">
+    <image href="assets/img/sea-cover.jpg" x="-70" y="-85" width="1580" height="527" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+</g>
+<rect class="sea-glint" x="0" y="0" width="1440" height="340" fill="url(#seaSheen)" pointer-events="none"/>
+</svg></div>
+</div>
+  </div>
+  <div class="cover-band cover-band--bottom" aria-hidden="true">
+    <div class="cover-track"><img src="assets/cover-thumbs/p-kn-14.jpg" alt=""><img src="assets/cover-thumbs/p-team-14.jpg" alt=""><img src="assets/cover-thumbs/p-kn-15.jpg" alt=""><img src="assets/cover-thumbs/p-team-15.jpg" alt=""><img src="assets/cover-thumbs/p-kn-16.jpg" alt=""><img src="assets/cover-thumbs/p-team-16.jpg" alt=""><img src="assets/cover-thumbs/p-team-17.jpg" alt=""><img src="assets/cover-thumbs/p-team-18.jpg" alt=""><img src="assets/cover-thumbs/p-team-19.jpg" alt=""><img src="assets/cover-thumbs/p-team-20.jpg" alt=""><img src="assets/cover-thumbs/p-team-21.jpg" alt=""><img src="assets/cover-thumbs/p-team-22.jpg" alt=""><img src="assets/cover-thumbs/p-team-23.jpg" alt=""><img src="assets/cover-thumbs/p-team-24.jpg" alt=""><img src="assets/cover-thumbs/p-team-25.jpg" alt=""><img src="assets/cover-thumbs/p-team-26.jpg" alt=""><img src="assets/cover-thumbs/p-team-27.jpg" alt=""><img src="assets/cover-thumbs/p-team-28.jpg" alt=""><img src="assets/cover-thumbs/p-team-29.jpg" alt=""><img src="assets/cover-thumbs/p-team-30.jpg" alt=""><img src="assets/cover-thumbs/p-team-31.jpg" alt=""><img src="assets/cover-thumbs/p-team-32.jpg" alt=""><img src="assets/cover-thumbs/p-team-33.jpg" alt=""><img src="assets/cover-thumbs/p-team-34.jpg" alt=""><img src="assets/cover-thumbs/p-team-35.jpg" alt=""><img src="assets/cover-thumbs/p-team-36.jpg" alt=""><img src="assets/cover-thumbs/p-team-37.jpg" alt=""><img src="assets/cover-thumbs/p-team-38.jpg" alt=""><img src="assets/cover-thumbs/p-team-39.jpg" alt=""><img src="assets/cover-thumbs/p-team-40.jpg" alt=""><img src="assets/cover-thumbs/p-team-41.jpg" alt=""><img src="assets/cover-thumbs/p-team-42.jpg" alt=""><img src="assets/cover-thumbs/p-team-43.jpg" alt=""><img src="assets/cover-thumbs/p-team-44.jpg" alt=""><img src="assets/cover-thumbs/p-team-45.jpg" alt=""><img src="assets/cover-thumbs/p-team-46.jpg" alt=""><img src="assets/cover-thumbs/p-team-47.jpg" alt=""><img src="assets/cover-thumbs/p-team-48.jpg" alt=""><img src="assets/cover-thumbs/p-team-49.jpg" alt=""><img src="assets/cover-thumbs/c-conifer-xiaoshu-s.jpg" alt=""><img src="assets/cover-thumbs/c-palace-blue-because-love-you-s.jpg" alt=""><img src="assets/cover-thumbs/c-social-this-is-my-holiday-s.jpg" alt=""><img src="assets/cover-thumbs/c-huayu-qixi-s.jpg" alt=""><img src="assets/cover-thumbs/c-photo-pool-portrait-s.jpg" alt=""><img src="assets/cover-thumbs/c-primus-fresh-air-s.jpg" alt=""><img src="assets/cover-thumbs/c-huayu-valentines-la-floret-s.jpg" alt=""><img src="assets/cover-thumbs/c-conifer-blues-cocktail-s.jpg" alt=""><img src="assets/cover-thumbs/c-photo-qipao-rockery-s.jpg" alt=""><img src="assets/cover-thumbs/c-swissotel-double-ninth-s.jpg" alt=""><img src="assets/cover-thumbs/c-social-relax-s.jpg" alt=""><img src="assets/cover-thumbs/c-primus-double11-travel-s.jpg" alt=""><img src="assets/cover-thumbs/c-conifer-infinite-coffee-s.jpg" alt=""><img src="assets/cover-thumbs/c-palace-ocean-valentines-s.jpg" alt=""><img src="assets/cover-thumbs/p-kn-14.jpg" alt=""><img src="assets/cover-thumbs/p-team-14.jpg" alt=""><img src="assets/cover-thumbs/p-kn-15.jpg" alt=""><img src="assets/cover-thumbs/p-team-15.jpg" alt=""><img src="assets/cover-thumbs/p-kn-16.jpg" alt=""><img src="assets/cover-thumbs/p-team-16.jpg" alt=""><img src="assets/cover-thumbs/p-team-17.jpg" alt=""><img src="assets/cover-thumbs/p-team-18.jpg" alt=""><img src="assets/cover-thumbs/p-team-19.jpg" alt=""><img src="assets/cover-thumbs/p-team-20.jpg" alt=""><img src="assets/cover-thumbs/p-team-21.jpg" alt=""><img src="assets/cover-thumbs/p-team-22.jpg" alt=""><img src="assets/cover-thumbs/p-team-23.jpg" alt=""><img src="assets/cover-thumbs/p-team-24.jpg" alt=""><img src="assets/cover-thumbs/p-team-25.jpg" alt=""><img src="assets/cover-thumbs/p-team-26.jpg" alt=""><img src="assets/cover-thumbs/p-team-27.jpg" alt=""><img src="assets/cover-thumbs/p-team-28.jpg" alt=""><img src="assets/cover-thumbs/p-team-29.jpg" alt=""><img src="assets/cover-thumbs/p-team-30.jpg" alt=""><img src="assets/cover-thumbs/p-team-31.jpg" alt=""><img src="assets/cover-thumbs/p-team-32.jpg" alt=""><img src="assets/cover-thumbs/p-team-33.jpg" alt=""><img src="assets/cover-thumbs/p-team-34.jpg" alt=""><img src="assets/cover-thumbs/p-team-35.jpg" alt=""><img src="assets/cover-thumbs/p-team-36.jpg" alt=""><img src="assets/cover-thumbs/p-team-37.jpg" alt=""><img src="assets/cover-thumbs/p-team-38.jpg" alt=""><img src="assets/cover-thumbs/p-team-39.jpg" alt=""><img src="assets/cover-thumbs/p-team-40.jpg" alt=""><img src="assets/cover-thumbs/p-team-41.jpg" alt=""><img src="assets/cover-thumbs/p-team-42.jpg" alt=""><img src="assets/cover-thumbs/p-team-43.jpg" alt=""><img src="assets/cover-thumbs/p-team-44.jpg" alt=""><img src="assets/cover-thumbs/p-team-45.jpg" alt=""><img src="assets/cover-thumbs/p-team-46.jpg" alt=""><img src="assets/cover-thumbs/p-team-47.jpg" alt=""><img src="assets/cover-thumbs/p-team-48.jpg" alt=""><img src="assets/cover-thumbs/p-team-49.jpg" alt=""><img src="assets/cover-thumbs/c-conifer-xiaoshu-s.jpg" alt=""><img src="assets/cover-thumbs/c-palace-blue-because-love-you-s.jpg" alt=""><img src="assets/cover-thumbs/c-social-this-is-my-holiday-s.jpg" alt=""><img src="assets/cover-thumbs/c-huayu-qixi-s.jpg" alt=""><img src="assets/cover-thumbs/c-photo-pool-portrait-s.jpg" alt=""><img src="assets/cover-thumbs/c-primus-fresh-air-s.jpg" alt=""><img src="assets/cover-thumbs/c-huayu-valentines-la-floret-s.jpg" alt=""><img src="assets/cover-thumbs/c-conifer-blues-cocktail-s.jpg" alt=""><img src="assets/cover-thumbs/c-photo-qipao-rockery-s.jpg" alt=""><img src="assets/cover-thumbs/c-swissotel-double-ninth-s.jpg" alt=""><img src="assets/cover-thumbs/c-social-relax-s.jpg" alt=""><img src="assets/cover-thumbs/c-primus-double11-travel-s.jpg" alt=""><img src="assets/cover-thumbs/c-conifer-infinite-coffee-s.jpg" alt=""><img src="assets/cover-thumbs/c-palace-ocean-valentines-s.jpg" alt=""></div>
+  </div>
+</div>
+
+<nav class="top">
+  <a class="nav-logo" href="#top">芦融融 Melody Lu</a>
+  <div class="nav-links">
+    <a href="#skills" data-en="Skills">能力</a><a href="#career" data-en="Career">经历</a><a href="#works" data-en="Works">作品</a><a href="#films" data-en="Films">影像</a><a href="#life" data-en="Life">生活</a><a href="#honors" data-en="Honors">荣誉</a><a href="#contact" data-en="Contact">联系</a><button id="lang-toggle" type="button">EN</button>
+  </div>
+</nav>
+
+<!-- ========== Hero ========== -->
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-kicker" data-en="MARKETING &amp; COMMUNICATIONS DIRECTOR">MARKETING &amp; COMMUNICATIONS DIRECTOR</div>
+      <h1 data-en="True generosity toward the future<br><span class='thin'>is to give everything<br>to the present.</span>">对未来的真正慷慨，<br><span class="thin">是把一切献给现在。</span></h1>
+      <p class="hero-quote" data-en="— Albert Camus">—— 加缪（Albert Camus）</p>
+      <p class="hero-name" data-en="Melody Lu <small>/ Marketing &amp; Communications Director · Conifer Hotel Sanya</small>">芦融融 <small>/ Melody Lu · 三亚康年酒店 市场传媒总监</small></p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#works" data-en="View Works">看作品</a>
+        <a class="btn btn-ghost" href="assets/resume-melody-lu.pdf" download data-en="Download Résumé (PDF)">下载 PDF 简历</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <img src="assets/img/portrait-m.jpg" alt="芦融融职业形象照，白色西装，影棚拍摄" width="640" height="636" fetchpriority="high">
+    </div>
+  </div>
+<div class="hero-aurora" aria-hidden="true">
+<div class="aurora-glow"></div>
+<div class="aurora-lines"><svg class="al al--1" viewBox="0 0 2880 180" preserveAspectRatio="none"><path d="M0,88 C240,54 480,122 720,88 C960,54 1200,122 1440,88 C1680,54 1920,122 2160,88 C2400,54 2640,122 2880,88" fill="none" stroke="rgba(201,168,106,0.24)" stroke-width="1.0"/></svg><svg class="al al--2" viewBox="0 0 2880 180" preserveAspectRatio="none"><path d="M0,116 C240,86 480,146 720,116 C960,86 1200,146 1440,116 C1680,86 1920,146 2160,116 C2400,86 2640,146 2880,116" fill="none" stroke="rgba(201,168,106,0.32)" stroke-width="1.0"/></svg><svg class="al al--3" viewBox="0 0 2880 180" preserveAspectRatio="none"><path d="M0,142 C240,116 480,168 720,142 C960,116 1200,168 1440,142 C1680,116 1920,168 2160,142 C2400,116 2640,168 2880,142" fill="none" stroke="rgba(201,168,106,0.20)" stroke-width="1.0"/></svg></div>
+<div class="aurora-motes"><i style="--x:81.5%;--y:42.5%;--d:5.0s;--t:9.7s;--s:1.5px"></i><i style="--x:39.9%;--y:76.8%;--d:8.4s;--t:8.9s;--s:2.9px"></i><i style="--x:45.1%;--y:81.1%;--d:9.6s;--t:14.3s;--s:2.4px"></i><i style="--x:31.9%;--y:75.2%;--d:8.2s;--t:8.2s;--s:1.9px"></i><i style="--x:70.4%;--y:71.4%;--d:6.8s;--t:9.7s;--s:2.1px"></i><i style="--x:94.6%;--y:82.5%;--d:4.1s;--t:12.9s;--s:2.6px"></i><i style="--x:76.1%;--y:43.0%;--d:8.3s;--t:10.3s;--s:2.4px"></i><i style="--x:44.0%;--y:66.1%;--d:7.7s;--t:9.1s;--s:2.1px"></i><i style="--x:21.5%;--y:64.8%;--d:6.7s;--t:14.5s;--s:2.6px"></i><i style="--x:94.7%;--y:57.8%;--d:0.8s;--t:8.8s;--s:2.5px"></i><i style="--x:86.0%;--y:85.6%;--d:5.9s;--t:12.1s;--s:1.9px"></i><i style="--x:96.0%;--y:78.2%;--d:4.9s;--t:11.3s;--s:2.9px"></i><i style="--x:5.8%;--y:43.0%;--d:0.8s;--t:10.2s;--s:3.0px"></i><i style="--x:26.4%;--y:68.7%;--d:4.0s;--t:13.7s;--s:2.1px"></i><i style="--x:9.4%;--y:77.9%;--d:3.9s;--t:10.9s;--s:2.2px"></i><i style="--x:68.4%;--y:45.1%;--d:9.0s;--t:11.8s;--s:1.6px"></i><i style="--x:61.1%;--y:82.0%;--d:2.4s;--t:9.9s;--s:1.9px"></i><i style="--x:3.5%;--y:76.6%;--d:6.6s;--t:9.7s;--s:1.5px"></i><i style="--x:55.5%;--y:73.7%;--d:0.3s;--t:12.0s;--s:2.2px"></i><i style="--x:12.7%;--y:44.0%;--d:9.1s;--t:12.5s;--s:2.9px"></i><i style="--x:61.9%;--y:52.1%;--d:6.6s;--t:12.0s;--s:2.9px"></i><i style="--x:79.0%;--y:46.9%;--d:0.4s;--t:12.9s;--s:1.7px"></i><i style="--x:38.5%;--y:50.3%;--d:9.4s;--t:11.7s;--s:2.4px"></i><i style="--x:70.1%;--y:71.2%;--d:9.4s;--t:10.7s;--s:2.1px"></i></div>
+</div>
+</header>
+
+<!-- ========== 能力 ========== -->
+<section id="skills">
+  <div class="sec-head reveal" data-en="<span class='sec-index'>01 / SKILLS</span><h2 class='sec-title'>Core Competencies</h2><div class='sec-line'></div>"><span class="sec-index">01 / SKILLS</span><h2 class="sec-title">核心竞争力</h2><div class="sec-line"></div></div>
+  <div class="skills">
+    <div class="skill reveal" data-en="<div class='skill-num'>01</div><h3>Integrated Marketing &amp; Strategy Execution</h3><p>I have been engaged in marketing promotion and media planning for large state-owned real estate projects for 8 years. Besides basic brand building and maintenance, I also have rich experience in marketing promotion, including product positioning, customer analysis, channel analysis and other related basic abilities. I can effectively cooperate with sales to complete product promotion.</p>"><div class="skill-num">01</div><h3>全域营销与策略落地</h3><p>在大型央企地产项目从事了8年市场营销推广及媒体策划工作，除了基础的品牌树立及维护，还具备丰富的营销推广经验，包括产品定位，客户分析，渠道分析等相关的基础能力，可以有效的配合销售完成产品推广。</p></div>
+    <div class="skill reveal" data-en="<div class='skill-num'>02</div><h3>Creative Aesthetics &amp; Trend Sensitivity</h3><p>Long-term collaboration with advertising and new media agencies. Strong aesthetic sense, adept at trend tracking, with keen insight into innovative and creative advertising.</p>"><div class="skill-num">02</div><h3>创意审美与热点敏锐度</h3><p>长期对接广告及新媒体公司，审美能力突出，擅长热点追踪，对先锋创意广告具有敏锐感知力。</p></div>
+    <div class="skill reveal" data-en="<div class='skill-num'>03</div><h3>Local Media Resources &amp; KOL Ecosystem</h3><p>Deep presence in Hainan region with extensive media resources (Douyin, NetEase, Sina, etc.) and government connections (Sanya Culture and Tourism Bureau, Tourism Promotion Bureau, Sanya Radio Station, etc.). Established KOL resource library enabling precise matchmaking between hotels and influencers.</p>"><div class="skill-num">03</div><h3>本地化媒体资源与达人生态</h3><p>深耕海南区域，拥有丰富的媒体资源（抖音、网易、新浪等）及政府资源（三亚文旅局、旅游推广局、三亚广播电台等）。已建立达人资源库，可实现酒店与达人的精准匹配。</p></div>
+    <div class="skill reveal" data-en="<div class='skill-num'>04</div><h3>Live-streaming Commerce &amp; Performance Delivery</h3><p>Proficient in the end-to-end logic from live-stream room setup to product selection. Led hotel marketing communications team to achieve approximately RMB 3 million in annual Douyin self-streaming GMV (2023), with a record of RMB 300,000 in a single 3-hour session.</p><p>Professional capability in KOL/KOC selection and talent matrix construction. Self-initiated Douyin hashtag generated approximately 2 million views. Nearly 1,000 influencer videos published across platforms, contributing approximately RMB 4 million in GMV.</p>"><div class="skill-num">04</div><h3>直播带货与业绩变现</h3><p>精通直播间搭建至选品的全链路逻辑。带领酒店市场传讯团队实现：抖音自播2023全年GMV约300万元，单场最好成绩3小时GMV约30万元。</p><p>具备KOL/KOC专业筛选能力，搭建达人矩阵。自创抖音标签曝光量约200万，达人视频全网输出近1,000条，达人视频贡献GMV约400万元。</p></div>
+    <div class="skill reveal" data-en="<div class='skill-num'>05</div><h3>Personal Media &amp; Content Creation</h3><p>Deep experience operating platforms including WeChat Official Account, Zhihu, Bilibili, Douyin, and Xiaohongshu. Approximately 10,000 followers across all platforms. Capable of independent creative video production, with single video views exceeding 10,000 and personal article reaching 100,000+ reads.</p>"><div class="skill-num">05</div><h3>自媒体运营与内容创作</h3><p>深度运营公众号、知乎、B站、抖音、小红书等平台，全网粉丝约1万。可独立完成创意视频拍摄及制作，单条视频播放量破万，个人文章最高阅读量10万+。</p></div>
+    <div class="skill reveal" data-en="<div class='skill-num'>06</div><h3>AI Application</h3><p>Skilled at using large AI models to produce web pages, mini-programs and other digital content, and independently completing design work — social media graphics, event posters, collateral and short-video visuals — significantly shortening production cycles; exploring innovative formats (short video, livestream, interactive H5) with hot-topic marketing and data insights.</p>"><div class="skill-num">06</div><h3>AI 应用能力</h3><p>熟练运用 AI 大模型制作网页、小程序等数字化内容，并可独立完成基础设计稿——社媒配图、活动海报、宣传物料与短视频画面，显著压缩内容与物料的产出周期；探索创新内容形式（短视频、直播、互动 H5），结合热点营销及数据洞察优化传播策略。</p></div>
+  </div>
+  </section>
+
+<!-- ========== 数据 ========== -->
+<section>
+  <div class="sec-head reveal" data-en="<span class='sec-index'>02 / HIGHLIGHTS</span><h2 class='sec-title'>Key Numbers</h2><div class='sec-line'></div>"><span class="sec-index">02 / HIGHLIGHTS</span><h2 class="sec-title">关键数据</h2><div class="sec-line"></div></div>
+  <div class="stats reveal">
+    <div class="stat" data-en="<div class='stat-num'>15 <span style='font-size:.55em'>Years</span></div><div class='stat-label'>Marketing &amp; Brand Communications</div>"><div class="stat-num">15 <span style="font-size:.55em">年</span></div><div class="stat-label">市场营销与品牌传播</div></div>
+    <div class="stat" data-en="<div class='stat-num'>6 <span style='font-size:.55em'>Yrs+</span></div><div class='stat-label'>Head of Hotel Marcom (Director / Manager)</div>"><div class="stat-num">6 <span style="font-size:.55em">年+</span></div><div class="stat-label">高星酒店传讯负责人</div></div>
+    <div class="stat" data-en="<div class='stat-num'>¥3<span style='font-size:.55em'>M</span></div><div class='stat-label'>Douyin Livestream GMV · Annual</div>"><div class="stat-num">¥300<span style="font-size:.55em">万</span></div><div class="stat-label">抖音自播全年 GMV</div></div>
+    <div class="stat" data-en="<div class='stat-num'>¥6<span style='font-size:.55em'>M</span></div><div class='stat-label'>KOL Campaign Verified Sales</div>"><div class="stat-num">近¥600<span style="font-size:.55em">万</span></div><div class="stat-label">达人联动核销额</div></div>
+  </div>
+</section>
+
+<!-- ========== 经历 ========== -->
+<section id="career">
+  <div class="sec-head reveal" data-en="<span class='sec-index'>03 / CAREER</span><h2 class='sec-title'>Professional Experience</h2><div class='sec-line'></div>"><span class="sec-index">03 / CAREER</span><h2 class="sec-title">职业经历</h2><div class="sec-line"></div></div>
+  <div class="timeline">
+
+    <div class="t-item reveal"><div class="t-time">2025.12 — 至今</div><div class="t-role" data-en="Marketing &amp; Communications Director">市场传媒总监</div><div class="t-org" data-en="Conifer Hotel Sanya (5-star) · Reporting to Director of Marketing &amp; Sales · Team of 3">三亚康年酒店（五星级）· 汇报市场销售总监 · 下属 3 人</div>
+      <ul class="t-desc" data-en="<li><b>Brand strategy &amp; communications:</b> led the hotel's overall brand image building and annual communication strategy, anchoring on signature products — the 1,200㎡ rooftop infinity pool and the 70m cantilevered transparent sky pool — to grow brand awareness among younger guests;</li><li><b>Integrated marketing:</b> coordinated online-offline campaigns, led holiday-themed marketing, MICE &amp; event support and event marketing, connecting the funnel of &quot;content seeding — engagement — arrival &amp; conversion&quot;;</li><li><b>New media matrix:</b> managed WeChat, Weibo, Douyin and RED, optimized content production workflows, and built differentiated content around the hotel's landmark status;</li><li><b>Media &amp; KOL cooperation:</b> expanded and maintained KOL and local media partnerships to drive co-created content and exposure.</li><li>Key results: launched the hotel's official RED annual KOL campaign; led the 8th anniversary and Spring Festival creative check-in activities, sparking organic social spreading; took part in the brand promotion of the 6th Asian Beach Games (Sanya 2026), delivering collateral and media coordination.</li>">
+        <li><b>品牌战略与传播：</b>主导酒店整体品牌形象塑造与年度传播策略落地，以 1200㎡ 屋顶无边际泳池、70 米高空悬挑透明泳池等核心产品为传播锚点，持续提升品牌在年轻客群中的认知度与市场声量；</li>
+        <li><b>整合营销策划：</b>统筹线上线下整合营销，主导节点主题营销、赛事接待配套宣传与事件营销，打通「内容种草—互动引流—到店转化」链路；</li>
+        <li><b>新媒体矩阵运营：</b>统管微信、微博、抖音、小红书等平台，优化内容生产与发布流程，围绕网红地标打造差异化传播内容，提升粉丝活跃度与品牌影响力；</li>
+        <li><b>媒体与达人合作：</b>拓展并维护达人及本地媒体合作关系，推动高质量内容共创与曝光，强化品牌在垂直领域的声量。</li>
+        <li><b>关键成果：</b>策划并落地酒店官方小红书年度达人活动；主导 8 周年庆及春节主题创意打卡活动，强化节日热点与品牌联动，带动社交平台自发传播；参与第六届亚洲沙滩运动会（亚沙会）品牌宣传推广，完成宣传物料筹备与媒体对接，助力赛事期间品牌曝光。</li>
+      </ul></div>
+
+    <div class="t-item reveal"><div class="t-time">2025.6 — 2025.12</div><div class="t-role" data-en="Marketing &amp; Communications Director">市场传讯总监</div><div class="t-org" data-en="Swissôtel &amp; Grand Mercure, Yalong Bay Sanya · Team of 2">三亚亚龙湾瑞士及美爵酒店 · 下属 2 人</div>
+      <ul class="t-desc" data-en="<li>Owned the hotel's overall brand image and annual communication strategy, continuously growing brand awareness and reputation in the target market;</li><li>Led the planning and execution of integrated online-offline campaigns, focusing on holiday themes and occasion-based marketing to boost engagement and conversion;</li><li>Managed the hotel's new media matrix (WeChat, Weibo, RED etc.), optimizing content production and publishing workflows;</li><li>Built partnerships with travel magazines, KOLs and local media to drive quality content collaboration.</li><li>Key results: unified brand visual &amp; content standards across platforms for standardized brand image management; ran regular UGC campaigns to lift fan participation; launched the &quot;one photo a day&quot; high-frequency publishing strategy.</li>">
+        <li>负责酒店整体品牌形象的塑造与维护，制定并落地年度市场传播策略，持续提升酒店在目标市场的知名度与美誉度；</li>
+        <li>主导线上线下整合营销活动的策划与执行，重点打造节日主题活动及其他节点性营销项目，增强品牌与用户的互动及转化效果；</li>
+        <li>统筹管理酒店新媒体矩阵（微信、微博、小红书等平台），优化内容生产与发布流程，提升内容质量、粉丝活跃度及品牌影响力；</li>
+        <li>拓展并维护与旅游杂志、达人及本地媒体的合作关系，推动高质量内容合作与曝光。</li>
+        <li><b>关键成果：</b>梳理并优化各平台品牌视觉与内容规范，实现品牌形象标准化管理；定期策划落地 UGC 主题活动，增强粉丝参与感与互动率；推行「每日一图」高频宣发，持续强化品牌记忆。</li>
+      </ul></div>
+
+    <div class="t-item reveal"><div class="t-time">2022.1 — 2024.2</div><div class="t-role" data-en="Marketing &amp; Communications Director">市场传讯总监</div><div class="t-org" data-en="Yalong Bay State Guesthouse, Sanya · Reporting to General Manager · Team of 3">三亚亚龙湾迎宾馆 · 汇报总经理 · 下属 3 人</div>
+      <ul class="t-desc" data-en="<li><b>Brand upgrade &amp; visual reshaping:</b> led brand diagnosis and strategic upgrade around the &quot;C-position resort of Yalong Bay&quot; positioning; oversaw VI system optimization, key visual refresh and standardized collateral design for unified brand touchpoints;</li><li><b>New media &amp; brand-performance conversion:</b> managed the WeChat / Weibo / RED / Douyin matrix with differentiated content strategies and publishing rhythm, connecting the &quot;seeding — engagement&quot; funnel;</li><li><b>Theme campaigns:</b> planned and delivered annual occasion campaigns (summer family season, Christmas &amp; New Year, Spring Festival), turning the kids' club and underwater restaurant into immersive experiences and social buzz;</li><li><b>Media relations &amp; data-driven PR:</b> built partnerships with travel media, lifestyle KOLs and local news channels, supporting content collaboration and award submissions; introduced PR analytics — sentiment monitoring, media value assessment and campaign performance review.</li><li><b>F&amp;B marketing:</b> designed integrated marketing plans for the underwater restaurant, combining KOL restaurant visits with platform promotions.</li><li>Key results: built Douyin operation from zero, <b>10x follower growth (1K→10K)</b>; created the series &quot;MC Speaks&quot; with 100 short videos, peak single-video UV 22K, <b>3 local trending placements</b>; pioneered the &quot;KOL matrix livestream commerce&quot; model — <b>63 livestreams, self-broadcast GMV ¥3M+, KOL verified sales nearly ¥6M</b>; delivered the Christmas Mermaid themed feast; led F&amp;B packaging upgrade, lifting online conversion via Meituan ROS optimization.</li>">
+        <li><b>品牌战略升级与视觉重塑：</b>主导酒店品牌形象诊断与战略升级，围绕「亚龙湾 C 位度假」核心定位，统筹 VI 系统优化、主视觉更新、宣传物料标准化设计，实现线上线下品牌触点的统一输出；</li>
+        <li><b>自媒体矩阵运营与品效合一转化：</b>统筹微信、微博、小红书、抖音矩阵，制定差异化内容策略与发布节奏，打通内容种草—互动引流链路，实现粉丝量、互动率同步增长；</li>
+        <li><b>主题活动营销：</b>策划落地暑期亲子季、圣诞新年、春节等年度节点性主题活动，结合亲子乐园、海底餐厅等特色资源打造沉浸式体验与社交传播爆点；</li>
+        <li><b>媒体关系与数据化公关：</b>建立并维护与旅游类媒体、生活方式 KOL 及本地新闻渠道的合作关系，推动高质量内容合作与奖项申报；引入数据化公关思维，通过舆情监测、媒体价值评估与传播效果数据分析优化媒体投放策略；</li>
+        <li><b>餐饮产品整合营销：</b>针对海底餐厅制定整合营销方案，联合 KOL 探店及平台大促活动。</li>
+        <li><b>关键成果：</b>从 0–1 搭建抖音运营体系，粉丝量 <b>10 倍增长</b>（1K→10K）；打造栏目「MC 有话说」，全年 100 条短视频，最高单条 UV 2.2 万，<b>3 次登榜同城热点</b>；创新「达人矩阵直播带货」模式，完成 <b>63 场直播，自播 GMV 超 300 万，联动达人总核销额近 600 万</b>；策划执行圣诞美人鱼主题盛宴；牵头餐饮板块包装升级，通过美团 ROS 分数优化助力线上转化率提升。</li>
+      </ul></div>
+
+    <div class="t-item reveal"><div class="t-time">2021.8 — 2022.1</div><div class="t-role" data-en="Marketing &amp; Communications Manager">市场传讯经理</div><div class="t-org" data-en="Anpu Hotel, Hangzhou · Reporting to General Manager · Team of 1">杭州安朴酒店 · 汇报总经理 · 下属 1 人</div>
+      <ul class="t-desc" data-en="<li>Designed and executed integrated marketing communications strategies, reinforcing the hotel's premium positioning through PR, advertising and promotions aligned with group standards and market trends;</li><li>Owned brand visual consistency — creative review and quality control of all published visuals (online &amp; offline) to meet group brand audit requirements;</li><li>Built strategic partnerships with media, KOLs, communities and key clients; represented the hotel at industry events, press conferences and major marketing programs;</li><li>Planned and executed PR events — brand co-branding, art exhibitions, charity galas — with customized collateral;</li><li>Led the annual communications plan from strategy to execution, exploring innovative formats (short video, livestream, interactive H5).</li>">
+        <li>制定并执行整合营销传播策略，通过公关、广告、促销活动强化酒店品牌高端定位，确保与集团标准及市场趋势契合；</li>
+        <li>把控品牌视觉一致性，负责所有出街画面（线上线下）的创意审核及品质管理，确保符合集团品牌审计要求；</li>
+        <li>建立并维护与媒体、KOL、社区及关键客户的战略合作关系，代表酒店参与行业活动、媒体发布会及大型营销计划，并建立系统化媒体数据库；</li>
+        <li>策划执行品牌联名、艺术展览、慈善晚宴等公关活动，结合定制化宣传物料提升品牌美誉度；</li>
+        <li>主导年度宣传计划，从策略制定到执行落地，探索创新内容形式（短视频、直播、互动 H5）。</li>
+      </ul></div>
+
+    <div class="t-item reveal"><div class="t-time">2020.7 — 2021.6</div><div class="t-role" data-en="Marketing &amp; Communications Manager">市场传讯经理</div><div class="t-org" data-en="Primus Hotel Sanya (Greenland) · Team of 2">三亚悦澜湾绿地铂瑞酒店 · 下属 2 人</div>
+      <ul class="t-desc" data-en="<li>Formulated and executed brand PR, advertising and promotional strategies across diversified channels to achieve brand positioning goals;</li><li>Led media relations — long-term partnerships with mainstream media, KOLs and communities; planned and joined large marketing campaigns; built a media database;</li><li>Planned offline PR events and managed design, production and distribution of collateral to ensure unified, high-quality brand visuals;</li><li>Drafted the hotel's annual communications plan; supervised creative design and production of ad visuals, print and digital materials;</li><li>Ran the WeChat / Weibo matrix with innovative content formats, growing fan engagement through data-driven operations.</li>">
+        <li>制定并执行酒店品牌公关、广告及促销策略，通过多元化宣传渠道实现品牌定位目标，提升市场知名度和美誉度；</li>
+        <li>主导媒体关系管理，与主流媒体、KOL 及社区建立长期合作，策划并参与大型营销活动，建立媒体数据库以优化传播效果；</li>
+        <li>策划并落地线下公关活动，统筹宣传物料的设计、制作及发行，确保内容与酒店高端调性及集团标准一致；</li>
+        <li>负责酒店全年宣传计划拟定，监督广告画面、印刷品及数字物料的创意设计与制作，确保品牌视觉统一且高质量出街；</li>
+        <li>运营酒店自媒体矩阵（微信、微博），创新内容形式与推广方式，通过数据驱动提升粉丝互动率及品牌影响力。</li>
+      </ul></div>
+
+    <div class="t-item reveal"><div class="t-time">2014.8 — 2019.6</div><div class="t-role" data-en="Media Planner">媒体策划</div><div class="t-org" data-en="Hainan Sanya Bay Xincheng Development Co. (state-owned real estate)">海南三亚湾新城开发有限公司（央企地产）</div>
+      <ul class="t-desc" data-en="<li>Owned media placement analysis and all media coordination — online, outdoor and airport media — with regular placement performance reviews;</li><li>Ran the company's social media presence: official account updates and online campaigns;</li><li>Managed design and production of print collateral;</li><li>Executed marketing events: supported group-level launch events and project grand openings; independently delivered smaller client appreciation and sales-occasion events;</li><li>Produced monthly promotion analysis and marketing cost reports.</li>">
+        <li>负责意向投放媒体的点位分析及项目所有媒体的对接与维护工作（网络媒体、户外及机场媒体），定期完成媒体投放效果分析；</li>
+        <li>负责自媒体运营工作，包括公众号更新、线上活动等；</li>
+        <li>负责项目印刷物料设计及制作工作；</li>
+        <li>负责营销活动的执行工作：协助完成集团的大型发布会、项目大型开盘活动，独立完成小型客户体验答谢会及营销节点活动；</li>
+        <li>负责月度推广分析报告及营销费用分析。</li>
+      </ul></div>
+
+    <div class="t-item reveal"><div class="t-time">2012.3 — 2013.11</div><div class="t-role" data-en="Planner / Sales">策划师 / 销售</div><div class="t-org" data-en="Hainan Longqiwan Development · Hainan Zhongdu Real Estate">海南龙栖湾发展置业 · 海南中度置业</div>
+      <ul class="t-desc" data-en="<li>Drafted marketing plans and stage reports; produced monthly promotion analysis covering call/visit data, customer profiles and transaction analysis;</li><li>Wrote and executed project marketing event plans — major sales occasions, client appreciation events and off-island roadshows;</li><li>Coordinated with ad agencies on key visuals, visual extensions and campaign themes;</li><li>Tracked industry policy and market trends; at Zhongdu, handled daily sales, off-island roadshow setup &amp; client reception, and customer profiling.</li>">
+        <li>配合营销方案及阶段性汇报材料的撰写；负责月度推广分析报告，包括来电来访数据分析、客户分析、成交分析等；</li>
+        <li>负责项目营销活动工作：活动方案撰写及执行，包括大型营销节点活动、客户答谢及岛外推介；</li>
+        <li>对接广告公司完成推广主形象及视觉延展的出街、推广主题制定；负责意向投放媒体的点位分析与对接维护；</li>
+        <li>负责行业政策、市场监测及分析。中度置业期间：完成日常销售工作，配合推广完成岛外推介会布场及客户接待，配合客户描摹及客户分析。</li>
+      </ul></div>
+
+    <p class="t-compact" data-en="Earlier: Anjia Media Group · Copywriter (2011) — real-estate advertorials and industry briefings. Education: Sanya College of Hainan University, B.A. in Tourism Business English (2007–2011); TEM-8, BEC Vantage, New Media Operator Certificate, Agent License.">更早：安家传媒集团 · 文案策划（2011.2–2011.5）——地产广告软文与行业快讯，写作生涯从这里开始。教育：海南大学三亚学院 · 旅业商务英语本科（2007–2011）；英语专业八级（TEM-8）、BEC 中级、新媒体运营师合格证、经纪人证。</p>
+  </div>
+</section>
+
+<!-- ========== 作品 ========== -->
+<section id="works">
+  <div class="sec-head reveal"><span class="sec-index">04 / WORKS</span><h2 class="sec-title">精选作品</h2><div class="sec-line"></div></div>
+  <div class="filter-bar reveal">
+    <button class="filter-btn" type="button" data-filter="all" aria-pressed="true" data-en="All<span class='f-count'>93</span>">全部<span class="f-count">93</span></button>
+    <button class="filter-btn" type="button" data-filter="kn" aria-pressed="false" data-en="Conifer<span class='f-count'>16</span>">康年<span class="f-count">16</span></button>
+    <button class="filter-btn" type="button" data-filter="ylg" aria-pressed="false" data-en="Guesthouse<span class='f-count'>5</span>">迎宾馆<span class="f-count">5</span></button>
+    <button class="filter-btn" type="button" data-filter="hy" aria-pressed="false" data-en="Huayu &amp; Swissotel<span class='f-count'>12</span>">华宇&瑞士<span class="f-count">12</span></button>
+    <button class="filter-btn" type="button" data-filter="ld" aria-pressed="false" data-en="Primus<span class='f-count'>11</span>">绿地铂瑞<span class="f-count">11</span></button>
+    <button class="filter-btn" type="button" data-filter="team" aria-pressed="false" data-en="Team Works<span class='f-count'>49</span>">团队拍摄<span class="f-count">49</span></button>
+  </div>
+  <div class="wgroup" data-cat="kn">
+    <div class="group-head reveal"><h3 data-en="Conifer · Posters">康年 · 海报</h3><span class="group-count" data-en="12 works">12 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-01.jpg" data-lb-title="海报 · 01" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 01" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-01.jpg" loading="lazy" alt="三亚康年酒店 海报 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-02.jpg" data-lb-title="海报 · 02" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 02" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-02.jpg" loading="lazy" alt="三亚康年酒店 海报 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-03.jpg" data-lb-title="海报 · 03" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 03" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-03.jpg" loading="lazy" alt="三亚康年酒店 海报 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-04.jpg" data-lb-title="海报 · 04" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 04" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-04.jpg" loading="lazy" alt="三亚康年酒店 海报 · 04"><figcaption>04</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-05.jpg" data-lb-title="海报 · 05" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 05" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-05.jpg" loading="lazy" alt="三亚康年酒店 海报 · 05"><figcaption>05</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-06.jpg" data-lb-title="海报 · 06" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 06" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-06.jpg" loading="lazy" alt="三亚康年酒店 海报 · 06"><figcaption>06</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-07.jpg" data-lb-title="海报 · 07" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 07" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-07.jpg" loading="lazy" alt="三亚康年酒店 海报 · 07"><figcaption>07</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-08.jpg" data-lb-title="海报 · 08" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 08" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-08.jpg" loading="lazy" alt="三亚康年酒店 海报 · 08"><figcaption>08</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-09.jpg" data-lb-title="海报 · 09" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 09" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-09.jpg" loading="lazy" alt="三亚康年酒店 海报 · 09"><figcaption>09</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-10.jpg" data-lb-title="海报 · 10" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 10" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-10.jpg" loading="lazy" alt="三亚康年酒店 海报 · 10"><figcaption>10</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-11.jpg" data-lb-title="海报 · 11" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 11" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-11.jpg" loading="lazy" alt="三亚康年酒店 海报 · 11"><figcaption>11</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-12.jpg" data-lb-title="海报 · 12" data-lb-meta="三亚康年酒店 · 海报" data-lb-title-en="Poster · 12" data-lb-meta-en="Conifer Sanya · Poster"><img src="assets/portfolio/img/kn-12.jpg" loading="lazy" alt="三亚康年酒店 海报 · 12"><figcaption>12</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="kn">
+    <div class="group-head reveal"><h3 data-en="Conifer · Postcards">康年 · 明信片</h3><span class="group-count" data-en="4 works">4 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-13.jpg" data-lb-title="明信片 · 01" data-lb-meta="三亚康年酒店 · 明信片" data-lb-title-en="Postcard · 01" data-lb-meta-en="Conifer Sanya · Postcard"><img src="assets/portfolio/img/kn-13.jpg" loading="lazy" alt="三亚康年酒店 明信片 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-14.jpg" data-lb-title="明信片 · 02" data-lb-meta="三亚康年酒店 · 明信片" data-lb-title-en="Postcard · 02" data-lb-meta-en="Conifer Sanya · Postcard"><img src="assets/portfolio/img/kn-14.jpg" loading="lazy" alt="三亚康年酒店 明信片 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-15.jpg" data-lb-title="明信片 · 03" data-lb-meta="三亚康年酒店 · 明信片" data-lb-title-en="Postcard · 03" data-lb-meta-en="Conifer Sanya · Postcard"><img src="assets/portfolio/img/kn-15.jpg" loading="lazy" alt="三亚康年酒店 明信片 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/kn-16.jpg" data-lb-title="明信片 · 04" data-lb-meta="三亚康年酒店 · 明信片" data-lb-title-en="Postcard · 04" data-lb-meta-en="Conifer Sanya · Postcard"><img src="assets/portfolio/img/kn-16.jpg" loading="lazy" alt="三亚康年酒店 明信片 · 04"><figcaption>04</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="ylg">
+    <div class="group-head reveal"><h3 data-en="Guesthouse · Brand Visuals">迎宾馆 · 品牌视觉</h3><span class="group-count" data-en="3 works">3 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/ylg-01.jpg" data-lb-title="品牌视觉 · 01" data-lb-meta="三亚亚龙湾迎宾馆 · 品牌视觉" data-lb-title-en="Brand Visual · 01" data-lb-meta-en="Yalong Bay State Guesthouse · Brand Visuals"><img src="assets/portfolio/img/ylg-01.jpg" loading="lazy" alt="三亚亚龙湾迎宾馆 品牌视觉 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ylg-02.jpg" data-lb-title="品牌视觉 · 02" data-lb-meta="三亚亚龙湾迎宾馆 · 品牌视觉" data-lb-title-en="Brand Visual · 02" data-lb-meta-en="Yalong Bay State Guesthouse · Brand Visuals"><img src="assets/portfolio/img/ylg-02.jpg" loading="lazy" alt="三亚亚龙湾迎宾馆 品牌视觉 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ylg-03.jpg" data-lb-title="品牌视觉 · 03" data-lb-meta="三亚亚龙湾迎宾馆 · 品牌视觉" data-lb-title-en="Brand Visual · 03" data-lb-meta-en="Yalong Bay State Guesthouse · Brand Visuals"><img src="assets/portfolio/img/ylg-03.jpg" loading="lazy" alt="三亚亚龙湾迎宾馆 品牌视觉 · 03"><figcaption>03</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="ylg">
+    <div class="group-head reveal"><h3 data-en="Guesthouse · Moments Posts">迎宾馆 · 朋友圈展示</h3><span class="group-count" data-en="2 works">2 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/ylg-04.jpg" data-lb-title="朋友圈 · 01" data-lb-meta="三亚亚龙湾迎宾馆 · 朋友圈展示" data-lb-title-en="Moments · 01" data-lb-meta-en="Yalong Bay State Guesthouse · Moments Posts"><img src="assets/portfolio/img/ylg-04.jpg" loading="lazy" alt="三亚亚龙湾迎宾馆 朋友圈 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ylg-05.jpg" data-lb-title="朋友圈 · 02" data-lb-meta="三亚亚龙湾迎宾馆 · 朋友圈展示" data-lb-title-en="Moments · 02" data-lb-meta-en="Yalong Bay State Guesthouse · Moments Posts"><img src="assets/portfolio/img/ylg-05.jpg" loading="lazy" alt="三亚亚龙湾迎宾馆 朋友圈 · 02"><figcaption>02</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="hy">
+    <div class="group-head reveal"><h3 data-en="Huayu &amp; Swissotel · Brand Visuals">华宇&瑞士 · 品牌视觉</h3><span class="group-count" data-en="11 works">11 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-01.jpg" data-lb-title="品牌视觉 · 01" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 01" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-01.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-02.jpg" data-lb-title="品牌视觉 · 02" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 02" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-02.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-03.jpg" data-lb-title="品牌视觉 · 03" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 03" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-03.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-04.jpg" data-lb-title="品牌视觉 · 04" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 04" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-04.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 04"><figcaption>04</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-05.jpg" data-lb-title="品牌视觉 · 05" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 05" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-05.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 05"><figcaption>05</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-06.jpg" data-lb-title="品牌视觉 · 06" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 06" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-06.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 06"><figcaption>06</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-07.jpg" data-lb-title="品牌视觉 · 07" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 07" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-07.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 07"><figcaption>07</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-08.jpg" data-lb-title="品牌视觉 · 08" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 08" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-08.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 08"><figcaption>08</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-09.jpg" data-lb-title="品牌视觉 · 09" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 09" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-09.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 09"><figcaption>09</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-10.jpg" data-lb-title="品牌视觉 · 10" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 10" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-10.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 10"><figcaption>10</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-11.jpg" data-lb-title="品牌视觉 · 11" data-lb-meta="华宇度假&amp;瑞士酒店 · 品牌视觉" data-lb-title-en="Brand Visual · 11" data-lb-meta-en="Huayu Resort &amp; Swissotel · Brand Visuals"><img src="assets/portfolio/img/hy-11.jpg" loading="lazy" alt="华宇度假&瑞士酒店 品牌视觉 · 11"><figcaption>11</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="hy">
+    <div class="group-head reveal"><h3 data-en="Huayu &amp; Swissotel · Moments Posts">华宇&瑞士 · 朋友圈展示</h3><span class="group-count" data-en="1 works">1 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/hy-12.jpg" data-lb-title="朋友圈 · 01" data-lb-meta="华宇度假&amp;瑞士酒店 · 朋友圈展示" data-lb-title-en="Moments · 01" data-lb-meta-en="Huayu Resort &amp; Swissotel · Moments Posts"><img src="assets/portfolio/img/hy-12.jpg" loading="lazy" alt="华宇度假&瑞士酒店 朋友圈 · 01"><figcaption>01</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="ld">
+    <div class="group-head reveal"><h3 data-en="Primus · Creative Works">绿地铂瑞 · 创意展示</h3><span class="group-count" data-en="6 works">6 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-01.jpg" data-lb-title="创意 · 01" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 创意展示" data-lb-title-en="Creative · 01" data-lb-meta-en="Primus Hotel Sanya · Creative Works"><img src="assets/portfolio/img/ld-01.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 创意 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-02.jpg" data-lb-title="创意 · 02" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 创意展示" data-lb-title-en="Creative · 02" data-lb-meta-en="Primus Hotel Sanya · Creative Works"><img src="assets/portfolio/img/ld-02.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 创意 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-03.jpg" data-lb-title="创意 · 03" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 创意展示" data-lb-title-en="Creative · 03" data-lb-meta-en="Primus Hotel Sanya · Creative Works"><img src="assets/portfolio/img/ld-03.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 创意 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-04.jpg" data-lb-title="创意 · 04" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 创意展示" data-lb-title-en="Creative · 04" data-lb-meta-en="Primus Hotel Sanya · Creative Works"><img src="assets/portfolio/img/ld-04.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 创意 · 04"><figcaption>04</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-05.jpg" data-lb-title="创意 · 05" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 创意展示" data-lb-title-en="Creative · 05" data-lb-meta-en="Primus Hotel Sanya · Creative Works"><img src="assets/portfolio/img/ld-05.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 创意 · 05"><figcaption>05</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-06.jpg" data-lb-title="创意 · 06" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 创意展示" data-lb-title-en="Creative · 06" data-lb-meta-en="Primus Hotel Sanya · Creative Works"><img src="assets/portfolio/img/ld-06.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 创意 · 06"><figcaption>06</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="ld">
+    <div class="group-head reveal"><h3 data-en="Primus · Double-11 Creative">绿地铂瑞 · 双十一创意</h3><span class="group-count" data-en="4 works">4 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-07.jpg" data-lb-title="双十一 · 01" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 双十一创意" data-lb-title-en="Double-11 · 01" data-lb-meta-en="Primus Hotel Sanya · Double-11 Creative"><img src="assets/portfolio/img/ld-07.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 双十一 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-08.jpg" data-lb-title="双十一 · 02" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 双十一创意" data-lb-title-en="Double-11 · 02" data-lb-meta-en="Primus Hotel Sanya · Double-11 Creative"><img src="assets/portfolio/img/ld-08.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 双十一 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-09.jpg" data-lb-title="双十一 · 03" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 双十一创意" data-lb-title-en="Double-11 · 03" data-lb-meta-en="Primus Hotel Sanya · Double-11 Creative"><img src="assets/portfolio/img/ld-09.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 双十一 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-10.jpg" data-lb-title="双十一 · 04" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 双十一创意" data-lb-title-en="Double-11 · 04" data-lb-meta-en="Primus Hotel Sanya · Double-11 Creative"><img src="assets/portfolio/img/ld-10.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 双十一 · 04"><figcaption>04</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="ld">
+    <div class="group-head reveal"><h3 data-en="Primus · Moments Posts">绿地铂瑞 · 朋友圈展示</h3><span class="group-count" data-en="1 works">1 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/ld-11.jpg" data-lb-title="朋友圈 · 01" data-lb-meta="三亚悦澜湾绿地铂瑞酒店 · 朋友圈展示" data-lb-title-en="Moments · 01" data-lb-meta-en="Primus Hotel Sanya · Moments Posts"><img src="assets/portfolio/img/ld-11.jpg" loading="lazy" alt="三亚悦澜湾绿地铂瑞酒店 朋友圈 · 01"><figcaption>01</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="team">
+    <div class="group-head reveal"><h3 data-en="Team Shoots · Conifer">团队拍摄 · 康年</h3><span class="group-count" data-en="12 works">12 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-01.jpg" data-lb-title="团队 · 01" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 01" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-01.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-02.jpg" data-lb-title="团队 · 02" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 02" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-02.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-03.jpg" data-lb-title="团队 · 03" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 03" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-03.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-04.jpg" data-lb-title="团队 · 04" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 04" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-04.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 04"><figcaption>04</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-05.jpg" data-lb-title="团队 · 05" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 05" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-05.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 05"><figcaption>05</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-06.jpg" data-lb-title="团队 · 06" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 06" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-06.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 06"><figcaption>06</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-07.jpg" data-lb-title="团队 · 07" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 07" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-07.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 07"><figcaption>07</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-08.jpg" data-lb-title="团队 · 08" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 08" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-08.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 08"><figcaption>08</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-09.jpg" data-lb-title="团队 · 09" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 09" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-09.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 09"><figcaption>09</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-10.jpg" data-lb-title="团队 · 10" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 10" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-10.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 10"><figcaption>10</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-11.jpg" data-lb-title="团队 · 11" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 11" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-11.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 11"><figcaption>11</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-12.jpg" data-lb-title="团队 · 12" data-lb-meta="康年 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 12" data-lb-meta-en="Conifer Sanya · Team Shoots"><img src="assets/portfolio/img/team-12.jpg" loading="lazy" alt="康年 · 团队拍摄 团队 · 12"><figcaption>12</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="team">
+    <div class="group-head reveal"><h3 data-en="Team Shoots · Guesthouse">团队拍摄 · 迎宾馆</h3><span class="group-count" data-en="2 works">2 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-13.jpg" data-lb-title="团队 · 01" data-lb-meta="迎宾馆 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 01" data-lb-meta-en="Yalong Bay State Guesthouse · Team Shoots"><img src="assets/portfolio/img/team-13.jpg" loading="lazy" alt="迎宾馆 · 团队拍摄 团队 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-14.jpg" data-lb-title="团队 · 02" data-lb-meta="迎宾馆 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 02" data-lb-meta-en="Yalong Bay State Guesthouse · Team Shoots"><img src="assets/portfolio/img/team-14.jpg" loading="lazy" alt="迎宾馆 · 团队拍摄 团队 · 02"><figcaption>02</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="team">
+    <div class="group-head reveal"><h3 data-en="Team Shoots · Huayu &amp; Swissotel">团队拍摄 · 华宇&瑞士</h3><span class="group-count" data-en="11 works">11 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-15.jpg" data-lb-title="团队 · 01" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 01" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-15.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-16.jpg" data-lb-title="团队 · 02" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 02" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-16.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-17.jpg" data-lb-title="团队 · 03" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 03" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-17.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-18.jpg" data-lb-title="团队 · 04" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 04" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-18.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 04"><figcaption>04</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-19.jpg" data-lb-title="团队 · 05" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 05" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-19.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 05"><figcaption>05</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-20.jpg" data-lb-title="团队 · 06" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 06" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-20.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 06"><figcaption>06</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-21.jpg" data-lb-title="团队 · 07" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 07" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-21.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 07"><figcaption>07</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-22.jpg" data-lb-title="团队 · 08" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 08" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-22.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 08"><figcaption>08</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-23.jpg" data-lb-title="团队 · 09" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 09" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-23.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 09"><figcaption>09</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-24.jpg" data-lb-title="团队 · 10" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 10" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-24.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 10"><figcaption>10</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-25.jpg" data-lb-title="团队 · 11" data-lb-meta="华宇&amp;瑞士 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 11" data-lb-meta-en="Huayu Resort &amp; Swissotel · Team Shoots"><img src="assets/portfolio/img/team-25.jpg" loading="lazy" alt="华宇&瑞士 · 团队拍摄 团队 · 11"><figcaption>11</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="team">
+    <div class="group-head reveal"><h3 data-en="Team Shoots · Anpu Hangzhou">团队拍摄 · 杭州安朴</h3><span class="group-count" data-en="4 works">4 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-26.jpg" data-lb-title="团队 · 01" data-lb-meta="杭州安朴 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 01" data-lb-meta-en="Anpu Hotel Hangzhou · Team Shoots"><img src="assets/portfolio/img/team-26.jpg" loading="lazy" alt="杭州安朴 · 团队拍摄 团队 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-27.jpg" data-lb-title="团队 · 02" data-lb-meta="杭州安朴 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 02" data-lb-meta-en="Anpu Hotel Hangzhou · Team Shoots"><img src="assets/portfolio/img/team-27.jpg" loading="lazy" alt="杭州安朴 · 团队拍摄 团队 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-28.jpg" data-lb-title="团队 · 03" data-lb-meta="杭州安朴 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 03" data-lb-meta-en="Anpu Hotel Hangzhou · Team Shoots"><img src="assets/portfolio/img/team-28.jpg" loading="lazy" alt="杭州安朴 · 团队拍摄 团队 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-29.jpg" data-lb-title="团队 · 04" data-lb-meta="杭州安朴 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 04" data-lb-meta-en="Anpu Hotel Hangzhou · Team Shoots"><img src="assets/portfolio/img/team-29.jpg" loading="lazy" alt="杭州安朴 · 团队拍摄 团队 · 04"><figcaption>04</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="wgroup" data-cat="team">
+    <div class="group-head reveal"><h3 data-en="Team Shoots · Primus">团队拍摄 · 绿地铂瑞</h3><span class="group-count" data-en="20 works">20 件</span></div>
+    <div class="mini-grid">
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-30.jpg" data-lb-title="团队 · 01" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 01" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-30.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 01"><figcaption>01</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-31.jpg" data-lb-title="团队 · 02" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 02" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-31.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 02"><figcaption>02</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-32.jpg" data-lb-title="团队 · 03" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 03" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-32.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 03"><figcaption>03</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-33.jpg" data-lb-title="团队 · 04" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 04" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-33.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 04"><figcaption>04</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-34.jpg" data-lb-title="团队 · 05" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 05" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-34.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 05"><figcaption>05</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-35.jpg" data-lb-title="团队 · 06" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 06" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-35.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 06"><figcaption>06</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-36.jpg" data-lb-title="团队 · 07" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 07" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-36.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 07"><figcaption>07</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-37.jpg" data-lb-title="团队 · 08" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 08" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-37.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 08"><figcaption>08</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-38.jpg" data-lb-title="团队 · 09" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 09" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-38.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 09"><figcaption>09</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-39.jpg" data-lb-title="团队 · 10" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 10" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-39.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 10"><figcaption>10</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-40.jpg" data-lb-title="团队 · 11" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 11" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-40.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 11"><figcaption>11</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-41.jpg" data-lb-title="团队 · 12" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 12" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-41.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 12"><figcaption>12</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-42.jpg" data-lb-title="团队 · 13" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 13" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-42.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 13"><figcaption>13</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-43.jpg" data-lb-title="团队 · 14" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 14" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-43.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 14"><figcaption>14</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-44.jpg" data-lb-title="团队 · 15" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 15" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-44.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 15"><figcaption>15</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-45.jpg" data-lb-title="团队 · 16" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 16" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-45.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 16"><figcaption>16</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-46.jpg" data-lb-title="团队 · 17" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 17" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-46.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 17"><figcaption>17</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-47.jpg" data-lb-title="团队 · 18" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 18" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-47.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 18"><figcaption>18</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-48.jpg" data-lb-title="团队 · 19" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 19" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-48.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 19"><figcaption>19</figcaption></figure>
+      <figure class="mini" data-lb-src="assets/portfolio/img/team-49.jpg" data-lb-title="团队 · 20" data-lb-meta="绿地铂瑞 · 团队拍摄 · 团队拍摄" data-lb-title-en="Team · 20" data-lb-meta-en="Primus Hotel Sanya · Team Shoots"><img src="assets/portfolio/img/team-49.jpg" loading="lazy" alt="绿地铂瑞 · 团队拍摄 团队 · 20"><figcaption>20</figcaption></figure>
+    </div>
+  </div>
+  <p class="works-note" data-en="93 graphic works, organized by hotel and category exactly as the source folders. Click any thumbnail to enlarge; full case studies and data available on request in interviews.">共 93 件平面作品，按酒店与类别分组呈现（与作品集源文件夹一一对应）。点击任一缩略图可放大查看；完整案例与数据可在面试时现场展开。</p>
+</section>
+
+<!-- ========== 影像 ========== -->
+<section id="films">
+  <div class="sec-head reveal"><span class="sec-index">05 / FILMS</span><h2 class="sec-title">影像作品</h2><div class="sec-line"></div></div>
+
+  
+<div class="group-head reveal"><h3 data-en="Signature Films · 6">代表影像 · 6 条</h3><span class="group-count" data-en="Hotel tour 1 · Brand motion 3 · Live-action &amp; illustration 2">酒店导览 1 · 品牌动画 3 · 实拍与手绘 2</span></div>
+  <div class="film-grid">
+    <figure class="video-card cinema" data-video-src="assets/video/conifer-hotel-tour.mp4">
+      <div class="video-media"><img src="assets/img/conifer-hotel-tour-poster-m.jpg" loading="lazy" alt="康年导览视频封面：厨师出镜，从厨房到餐桌"><button class="play-btn" type="button" aria-label="播放：康年导览"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">96.4s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Conifer Hotel Tour</span><span class='wc-meta'>Conifer · Hotel Tour · 96.4s</span>"><span class="wc-title">康年导览</span><span class="wc-meta">康年 · 酒店导览 · 96.4s</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/primus-motion-loop.mp4">
+      <div class="video-media"><img src="assets/img/primus-motion-loop-poster-m.jpg" loading="lazy" alt="极简铂瑞视频封面"><button class="play-btn" type="button" aria-label="播放：极简铂瑞"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">14.3s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Minimal Primus</span><span class='wc-meta'>Primus · Brand Motion</span>"><span class="wc-title">极简铂瑞</span><span class="wc-meta">铂瑞 · 品牌动画</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/primus-new-year-motion.mp4">
+      <div class="video-media"><img src="assets/img/primus-new-year-motion-poster-m.jpg" loading="lazy" alt="除快夕乐视频封面"><button class="play-btn" type="button" aria-label="播放：除快夕乐"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">15.0s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Eve Motion</span><span class='wc-meta'>Primus · Brand Motion</span>"><span class="wc-title">除快夕乐</span><span class="wc-meta">铂瑞 · 品牌动画</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/primus-christmas-motion.mp4">
+      <div class="video-media"><img src="assets/img/primus-christmas-motion-poster-m.jpg" loading="lazy" alt="圣诞插画视频封面"><button class="play-btn" type="button" aria-label="播放：圣诞插画"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">7.7s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Christmas Illustration</span><span class='wc-meta'>Primus · Brand Motion</span>"><span class="wc-title">圣诞插画</span><span class="wc-meta">铂瑞 · 品牌动画</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/conifer-floating-tea.mp4">
+      <div class="video-media"><img src="assets/img/conifer-floating-tea-poster-m.jpg" loading="lazy" alt="漂浮下午茶视频封面"><button class="play-btn" type="button" aria-label="播放：漂浮下午茶"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">19.0s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Floating Afternoon Tea</span><span class='wc-meta'>Conifer · Live-action Short</span>"><span class="wc-title">漂浮下午茶</span><span class="wc-meta">康年 · 实拍短片</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/illustration-cafe.mp4">
+      <div class="video-media"><img src="assets/img/illustration-cafe-poster-m.jpg" loading="lazy" alt="手绘咖啡馆视频封面"><button class="play-btn" type="button" aria-label="播放：手绘咖啡馆"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">31.6s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Hand-drawn Cafe</span><span class='wc-meta'>Illustration</span>"><span class="wc-title">手绘咖啡馆</span><span class="wc-meta">手绘动画</span></figcaption>
+    </figure>
+  </div>
+<div class="group-head reveal"><h3 data-en="Conifer Short Videos · 8">康年短视频 · 8 条</h3><span class="group-count" data-en="F&amp;B 2 · Resort vibe 2 · Cultural product 1 · AI 2 · Event promo 1">餐饮 2 · 度假氛围 2 · 文创 1 · AI 生成 2 · 活动宣传 1</span></div>
+  <div class="film-grid">
+    <figure class="video-card" data-video-src="assets/video/custom/c2.mp4">
+      <div class="video-media"><img src="assets/img/custom/c2-poster.jpg" loading="lazy" alt="早餐视频封面"><button class="play-btn" type="button" aria-label="播放：早餐"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">16.5s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Breakfast</span><span class='wc-meta'>Conifer · F&amp;amp;B Short Video</span>"><span class="wc-title">早餐</span><span class="wc-meta">康年 · 餐饮短视频</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/custom/c6.mp4">
+      <div class="video-media"><img src="assets/img/custom/c6-poster.jpg" loading="lazy" alt="早餐礼遇视频封面"><button class="play-btn" type="button" aria-label="播放：早餐礼遇"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">32.6s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Breakfast Treat</span><span class='wc-meta'>Conifer · F&amp;amp;B Short Video</span>"><span class="wc-title">早餐礼遇</span><span class="wc-meta">康年 · 餐饮短视频</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/custom/c3.mp4">
+      <div class="video-media"><img src="assets/img/custom/c3-poster.jpg" loading="lazy" alt="泳池水下影像封面"><button class="play-btn" type="button" aria-label="播放：泳池水下"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">15.0s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Pool · Underwater</span><span class='wc-meta'>Conifer · Resort Vibe Short</span>"><span class="wc-title">泳池 · 水下影像</span><span class="wc-meta">康年 · 度假氛围短片</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/custom/c4.mp4">
+      <div class="video-media"><img src="assets/img/custom/c4-poster.jpg" loading="lazy" alt="冰箱贴宣传视频封面"><button class="play-btn" type="button" aria-label="播放：冰箱贴宣传"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">28.6s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Fridge Magnet Promo</span><span class='wc-meta'>Conifer · Cultural Product Promo</span>"><span class="wc-title">冰箱贴宣传</span><span class="wc-meta">康年 · 文创宣传短片</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/video/custom/c5.mp4">
+      <div class="video-media"><img src="assets/img/custom/c5-poster.jpg" loading="lazy" alt="池畔小熊与鸡尾酒视频封面"><button class="play-btn" type="button" aria-label="播放：池畔小熊"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">62.2s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Poolside Bear &amp; Cocktails</span><span class='wc-meta'>Conifer · Resort Vibe Short</span>"><span class="wc-title">池畔小熊与鸡尾酒</span><span class="wc-meta">康年 · 度假氛围短片</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/kn-ai1.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/kn-ai1-poster.jpg" loading="lazy" alt="AI视频1封面"><button class="play-btn" type="button" aria-label="播放：AI视频1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">33.4s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>AI Video · 01</span><span class='wc-meta'>Conifer · AI-generated Short</span>"><span class="wc-title">AI 视频 · 01</span><span class="wc-meta">康年 · AI 生成短片</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/kn-ai2.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/kn-ai2-poster.jpg" loading="lazy" alt="AI视频2封面"><button class="play-btn" type="button" aria-label="播放：AI视频2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">23.7s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>AI Video · 02</span><span class='wc-meta'>Conifer · AI-generated Short</span>"><span class="wc-title">AI 视频 · 02</span><span class="wc-meta">康年 · AI 生成短片</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/kn-ire.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/kn-ire-poster.jpg" loading="lazy" alt="I人E人活动宣传视频封面"><button class="play-btn" type="button" aria-label="播放：I人E人活动宣传"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">62.2s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Introvert &amp; Extrovert · Event Promo</span><span class='wc-meta'>Conifer · Event Promo Short</span>"><span class="wc-title">I 人 E 人 · 活动宣传</span><span class="wc-meta">康年 · 活动宣传短片</span></figcaption>
+    </figure>
+  </div>
+<div class="group-head reveal"><h3 data-en="Primus Short Videos · 9">绿地铂瑞短视频 · 9 条</h3><span class="group-count" data-en="CNY series 8 · Creative 1">春节系列 8 · 创意短片 1</span></div>
+  <div class="film-grid">
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-01.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-01-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面1"><button class="play-btn" type="button" aria-label="播放：春节系列1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">15.0s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 01</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 01</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-02.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-02-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面2"><button class="play-btn" type="button" aria-label="播放：春节系列2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">10.7s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 02</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 02</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-03.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-03-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面3"><button class="play-btn" type="button" aria-label="播放：春节系列3"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">10.8s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 03</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 03</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-04.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-04-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面4"><button class="play-btn" type="button" aria-label="播放：春节系列4"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">10.8s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 04</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 04</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-05.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-05-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面5"><button class="play-btn" type="button" aria-label="播放：春节系列5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">14.7s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 05</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 05</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-06.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-06-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面6"><button class="play-btn" type="button" aria-label="播放：春节系列6"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">10.2s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 06</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 06</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-07.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-07-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面7"><button class="play-btn" type="button" aria-label="播放：春节系列7"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">8.8s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 07</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 07</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-cny-08.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-cny-08-poster.jpg" loading="lazy" alt="铂瑞春节系列视频封面8"><button class="play-btn" type="button" aria-label="播放：春节系列8"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">14.3s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>CNY Series · 08</span><span class='wc-meta'>Primus · CNY Series</span>"><span class="wc-title">春节系列 · 08</span><span class="wc-meta">绿地铂瑞 · 春节系列</span></figcaption>
+    </figure>
+    <figure class="video-card" data-video-src="assets/portfolio/video/ld-creative.mp4">
+      <div class="video-media"><img src="assets/portfolio/poster/ld-creative-poster.jpg" loading="lazy" alt="铂瑞创意短片封面"><button class="play-btn" type="button" aria-label="播放：铂瑞创意短片"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="dur-badge">15.0s</span></div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Creative Short</span><span class='wc-meta'>Primus · Creative Works</span>"><span class="wc-title">创意短片</span><span class="wc-meta">绿地铂瑞 · 创意展示</span></figcaption>
+    </figure>
+  </div>
+  <p class="works-note" data-en="23 films in total: signature 6 · Conifer 8 · Primus 9. All compressed for the web — click to play. Full-quality files available on request.">影像共 23 条：代表影像 6 · 康年 8 · 绿地铂瑞 9。均为 Web 压缩版，点击即播；高清源文件可另行提供。</p>
+</section>
+
+
+<!-- ========== 生活 ========== -->
+<section id="life">
+  <div class="sec-head reveal" data-en="<span class='sec-index'>06 / LIFE</span><h2 class='sec-title'>Life &amp; Introduction</h2><div class='sec-line'></div>"><span class="sec-index">06 / LIFE</span><h2 class="sec-title">生活 · 自我介绍</h2><div class="sec-line"></div></div>
+  <div class="life-grid reveal">
+    <figure class="life-card" id="intro-card" data-video-src="assets/video/intro.mp4">
+      <div class="life-media" id="intro-media">
+        <img src="assets/img/intro-poster.jpg" alt="" onerror="this.remove()">
+        <div class="gold-band" aria-hidden="true">
+<div class="gold-band__glow"></div>
+<div class="gold-band__line gold-band__line--1"><svg viewBox="0 0 2880 180" preserveAspectRatio="none"><path d="M0,110 C240,80 480,140 720,110 C960,80 1200,140 1440,110 C1680,80 1920,140 2160,110 C2400,80 2640,140 2880,110" fill="none" stroke="rgba(201,168,106,.30)" stroke-width="1.2"/></svg></div>
+<div class="gold-band__line gold-band__line--2"><svg viewBox="0 0 2880 180" preserveAspectRatio="none"><path d="M0,140 C240,112 480,168 720,140 C960,112 1200,168 1440,140 C1680,112 1920,168 2160,140 C2400,112 2640,168 2880,140" fill="none" stroke="rgba(201,168,106,.20)" stroke-width="1"/></svg></div>
+</div>
+        <span class="life-media__hint" data-en="Vlog · Coming soon">自我介绍视频 · 待上传</span>
+        <span class="life-media__label" data-en="A short introduction to me">一段关于我的自我介绍</span>
+        <button class="play-btn" type="button" aria-label="播放自我介绍视频"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+      </div>
+      <figcaption class="video-caption" data-en="<span class='wc-title'>Introduction Video</span><span class='wc-meta'>Self-intro · Vlog</span>"><span class="wc-title">自我介绍视频</span><span class="wc-meta">个人介绍 · Vlog</span></figcaption>
+    </figure>
+    <div class="life-note" data-en="<h3>Off the clock</h3><p>Beyond the day job, there is a person behind the work. A short film about who I am is on its way — drop the video into the site folder and it will play right here.</p><a class='btn btn-ghost' href='life.html'>Elsewhere · Accounts &amp; Content →</a>">
+      <h3>工作之外</h3>
+      <p>作品之外，也想让你认识做作品的这个人。一段自我介绍的影像正在准备中——把视频放进站点目录，这里就能直接播放。</p>
+      <a class="btn btn-ghost" href="life.html">在别处 · 账号与内容 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 荣誉 ========== -->
+<section id="honors">
+  <div class="sec-head reveal"><span class="sec-index">07 / HONORS</span><h2 class="sec-title" data-en="Honors">荣誉</h2><div class="sec-line"></div></div>
+  <div class="awards reveal">
+    <figure class="award"><img src="assets/img/award-2020-marketing-elite-s.jpg" loading="lazy" alt="2020年度市场传讯精英奖证书"><figcaption data-en="Annual Marcom Elite Award · 2020">年度市场传讯精英奖 · 2020</figcaption></figure>
+    <figure class="award"><img src="assets/img/award-2020-best-promo-team-s.jpg" loading="lazy" alt="2020年度最佳市场推广团队证书"><figcaption data-en="Best Marketing Team · 2020">最佳市场推广团队 · 2020</figcaption></figure>
+    <figure class="award"><img src="assets/img/award-2020-q4-employee-s.jpg" loading="lazy" alt="2020年第四季度优秀员工证书"><figcaption data-en="Quarterly Outstanding Employee · 2020 Q4">季度优秀员工 · 2020 Q4</figcaption></figure>
+    <figure class="award"><img src="assets/img/award-2016-culture-microstory-s.jpg" loading="lazy" alt="2016年企业文化微故事一等奖证书"><figcaption data-en="Micro-story Competition 1st Prize · 2016">企业文化微故事一等奖 · 2016</figcaption></figure>
+  </div>
+  <ol class="honor-list reveal">
+    <li class="honor-item"><div class="honor-name" data-en="Greenland Hotels &amp; Tourism Group — &quot;Annual Marcom Elite Award&quot;">绿地酒店旅游集团「年度市场传讯精英奖」</div><div class="honor-meta" data-en="Fiscal year 2020 · Presented Jan 2021 · Individual">2020 年度 · 2021 年 1 月颁发 · 个人奖</div></li>
+    <li class="honor-item"><div class="honor-name" data-en="Greenland Hotels &amp; Tourism Group — &quot;Best Marketing Team of the Year&quot;">绿地酒店旅游集团年度「最佳市场推广团队」</div><div class="honor-meta" data-en="Awarded to Primus Hotel Sanya · 2020 · Team">授予三亚悦澜湾绿地铂瑞酒店 · 2020 年度 · 团队奖</div></li>
+    <li class="honor-item"><div class="honor-name" data-en="Primus Hotel Sanya — &quot;Quarterly Outstanding Employee&quot;">三亚悦澜湾绿地铂瑞酒店「季度优秀员工」</div><div class="honor-meta" data-en="Q4 2020">2020 年第四季度</div></li>
+    <li class="honor-item"><div class="honor-name" data-en="1st Prize, &quot;Corporate Culture Micro-story&quot; Competition — Luneng Group (Ducheng Weiye)">鲁能集团（都城伟业集团）「企业文化微故事」征集活动一等奖</div><div class="honor-meta" data-en="2016 · Unit: Hainan Sanya Bay Xincheng Development Co.">2016 年 · 所在单位：海南三亚湾新城开发有限公司</div></li>
+  </ol>
+</section>
+
+<!-- ========== 联系 ========== -->
+<section id="contact" class="contact">
+  <div class="sec-head reveal"><span class="sec-index">08 / CONTACT</span><h2 class="sec-title" data-en="Get in Touch">与我联系</h2><div class="sec-line"></div></div>
+  <div class="contact-list reveal">
+    <a class="contact-item" href="mailto:384364503@qq.com"><b>EMAIL</b> 384364503@qq.com</a>
+    <a class="contact-item" href="tel:+8615120677951"><b>PHONE</b> +86 151 2067 7951</a>
+    <span class="contact-item"><b>LOCATION</b> <span data-en="Sanya, China">三亚 · Sanya</span></span>
+  </div>
+  <div class="wechat-card reveal">
+    <a href="assets/img/wechat-qr.png" target="_blank" rel="noopener" aria-label="点击查看微信二维码大图"><img src="assets/img/wechat-qr.png" alt="融小墨 微信二维码" width="620" height="610"></a>
+    <div class="wechat-card__meta"><b>WECHAT</b><span data-en="Rong Xiaomo · Sanya, Hainan">融小墨 · 海南 三亚</span></div>
+    <div class="wechat-card__hint" data-en="Scan to add me on WeChat.">扫二维码，添加我为朋友。</div>
+  </div>
+  <div class="reveal" style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap">
+    <a class="btn btn-gold" href="mailto:384364503@qq.com" data-en="Write to Me">给我写信</a>
+    <a class="btn btn-ghost" href="assets/resume-melody-lu.pdf" download data-en="Download Résumé (PDF)">下载 PDF 简历</a>
+  </div>
+</section>
+
+<footer><span data-en="© 2026 Melody Lu ｜ Sanya, China">© 2026 芦融融 Melody Lu ｜ 三亚 Sanya</span><span data-en="Craft: communications. Work: Sanya.">手艺是传播，作品在三亚。</span></footer>
+
+<!-- ========== 灯箱 ========== -->
+<dialog class="lightbox" id="lightbox">
+<div class="gold-band" aria-hidden="true">
+<div class="gold-band__glow"></div>
+<div class="gold-band__line gold-band__line--1"><svg viewBox="0 0 2880 180" preserveAspectRatio="none"><path d="M0,110 C240,80 480,140 720,110 C960,80 1200,140 1440,110 C1680,80 1920,140 2160,110 C2400,80 2640,140 2880,110" fill="none" stroke="rgba(201,168,106,.30)" stroke-width="1.2"/></svg></div>
+<div class="gold-band__line gold-band__line--2"><svg viewBox="0 0 2880 180" preserveAspectRatio="none"><path d="M0,140 C240,112 480,168 720,140 C960,112 1200,168 1440,140 C1680,112 1920,168 2160,140 C2400,112 2640,168 2880,140" fill="none" stroke="rgba(201,168,106,.20)" stroke-width="1"/></svg></div>
+</div>
+  <img class="lb-img" src="" alt="">
+  <video class="lb-video" controls playsinline preload="metadata"></video>
+  <div class="lb-bar"><span class="lb-title"></span><span class="lb-meta"></span></div>
+  <button class="lb-close" type="button" aria-label="关闭">✕</button>
+</dialog>
+
+<script>
+  // 封面揭幕
+  const cover = document.getElementById('cover');
+  function enter() {
+    if (cover.classList.contains('revealing')) return;
+    cover.classList.add('revealing');
+    document.body.classList.remove('cover-lock');
+    document.body.classList.add('cover-open');
+    setTimeout(() => cover.remove(), 650);
+  }
+  document.getElementById('enter').addEventListener('click', enter);
+
+
+  // 滚动浮现
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // 作品筛选
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.setAttribute('aria-pressed', 'false'));
+      btn.setAttribute('aria-pressed', 'true');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.wgroup').forEach(g => {
+        g.style.display = (f === 'all' || g.dataset.cat === f) ? '' : 'none';
+      });
+    });
+  });
+
+  // 灯箱
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('.lb-img');
+  const lbTitle = lb.querySelector('.lb-title');
+  const lbMeta = lb.querySelector('.lb-meta');
+  const lbVideo = lb.querySelector('.lb-video');
+  function openLb(el) {
+    const t = el.querySelector ? el.querySelector('.wc-title') : null;
+    const m = el.querySelector ? el.querySelector('.wc-meta') : null;
+    lbTitle.textContent = (lang === 'en' && el.dataset.lbTitleEn) ? el.dataset.lbTitleEn : (el.dataset.lbTitle || (t ? t.textContent : '') || '');
+    lbMeta.textContent = (lang === 'en' && el.dataset.lbMetaEn) ? el.dataset.lbMetaEn : (el.dataset.lbMeta || (m ? m.textContent : ''));
+    const vsrc = el.dataset.videoSrc;
+    if (vsrc) {
+      lb.classList.add('is-video');
+      lbVideo.src = vsrc;
+      lbVideo.currentTime = 0;
+      lbVideo.play().catch(() => {});
+    } else {
+      lb.classList.remove('is-video');
+      lbVideo.pause();
+      lbVideo.removeAttribute('src');
+      lbVideo.load();
+      const img = el.tagName === 'IMG' ? el : el.querySelector('img');
+      lbImg.src = el.dataset.lbSrc || (img && img.dataset.lbSrc) || (img ? img.src : '');
+      lbImg.alt = img ? (img.alt || '') : '';
+      if (!lbImg.src) { lbTitle.textContent = lbTitle.textContent || el.alt || ''; }
+    }
+    if (typeof lb.showModal === 'function') lb.showModal(); else lb.setAttribute('open', '');
+  }
+  document.querySelectorAll('.mini').forEach(c => c.addEventListener('click', () => openLb(c)));
+  document.querySelectorAll('#films .video-card').forEach(c => c.addEventListener('click', () => openLb(c)));
+  function closeLb() { lbVideo.pause(); lb.close(); }
+  lb.querySelector('.lb-close').addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  lb.addEventListener('close', () => { lbVideo.pause(); });
+
+  // 中英切换
+  let lang = 'zh';
+  const langStore = new Map();
+  document.getElementById('lang-toggle').addEventListener('click', () => {
+    lang = lang === 'zh' ? 'en' : 'zh';
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if (!langStore.has(el)) langStore.set(el, el.innerHTML);
+      el.innerHTML = lang === 'en' ? el.dataset.en : langStore.get(el);
+    });
+    document.getElementById('lang-toggle').textContent = lang === 'zh' ? 'EN' : '中文';
+  });
+
+  // 生活板块：自我介绍视频（把 intro.mp4 放进 assets/video/ 即可播放）
+  (function () {
+    const card = document.getElementById('intro-card');
+    const media = document.getElementById('intro-media');
+    if (!card || !media) return;
+    card.addEventListener('click', () => {
+      if (media.querySelector('video')) return;
+      const src = card.dataset.videoSrc;
+      if (!src) return;
+      const v = document.createElement('video');
+      v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'metadata';
+      v.addEventListener('error', () => {
+        v.remove();
+        const tip = media.querySelector('.life-media__hint');
+        if (tip) tip.textContent = '视频尚未上传 · 请放入 assets/video/intro.mp4';
+      });
+      v.src = src;
+      media.appendChild(v);
+      v.play().catch(() => {});
+    });
+  })();
+</script>
+
+<script>(function(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.cover .sea-art svg').forEach(function(s){if(s.pauseAnimations)s.pauseAnimations();});}})();</script>
+</body>
+</html>

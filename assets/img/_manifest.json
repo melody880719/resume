@@ -1,0 +1,686 @@
+{
+ "award-2016-culture-microstory": {
+  "src": "assets/award-2016-culture-microstory.png",
+  "w": 500,
+  "h": 500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/award-2016-culture-microstory-s.jpg",
+    "w": 400,
+    "h": 400,
+    "kb": 41.5
+   }
+  }
+ },
+ "award-2020-best-promo-team": {
+  "src": "assets/award-2020-best-promo-team.png",
+  "w": 500,
+  "h": 500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/award-2020-best-promo-team-s.jpg",
+    "w": 400,
+    "h": 400,
+    "kb": 19.9
+   }
+  }
+ },
+ "award-2020-marketing-elite": {
+  "src": "assets/award-2020-marketing-elite.png",
+  "w": 500,
+  "h": 500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/award-2020-marketing-elite-s.jpg",
+    "w": 400,
+    "h": 400,
+    "kb": 19.4
+   }
+  }
+ },
+ "award-2020-q4-employee": {
+  "src": "assets/award-2020-q4-employee.png",
+  "w": 500,
+  "h": 500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/award-2020-q4-employee-s.jpg",
+    "w": 400,
+    "h": 400,
+    "kb": 24.5
+   }
+  }
+ },
+ "portrait": {
+  "src": "assets/portrait.jpg",
+  "w": 1288,
+  "h": 1279,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/portrait-s.jpg",
+    "w": 400,
+    "h": 397,
+    "kb": 9.3
+   },
+   "m": {
+    "file": "assets/img/portrait-m.jpg",
+    "w": 640,
+    "h": 636,
+    "kb": 17.6
+   },
+   "l": {
+    "file": "assets/img/portrait-l.jpg",
+    "w": 960,
+    "h": 953,
+    "kb": 31.3
+   }
+  }
+ },
+ "conifer-blues-cocktail": {
+  "src": "assets/work/conifer-blues-cocktail.jpg",
+  "w": 802,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/conifer-blues-cocktail-s.jpg",
+    "w": 400,
+    "h": 748,
+    "kb": 43.4
+   },
+   "m": {
+    "file": "assets/img/conifer-blues-cocktail-m.jpg",
+    "w": 640,
+    "h": 1197,
+    "kb": 88.2
+   }
+  }
+ },
+ "conifer-infinite-coffee": {
+  "src": "assets/work/conifer-infinite-coffee.jpg",
+  "w": 808,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/conifer-infinite-coffee-s.jpg",
+    "w": 400,
+    "h": 743,
+    "kb": 42.1
+   },
+   "m": {
+    "file": "assets/img/conifer-infinite-coffee-m.jpg",
+    "w": 640,
+    "h": 1188,
+    "kb": 89.1
+   }
+  }
+ },
+ "conifer-lunar-new-year": {
+  "src": "assets/work/conifer-lunar-new-year.jpg",
+  "w": 729,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/conifer-lunar-new-year-s.jpg",
+    "w": 400,
+    "h": 823,
+    "kb": 70.4
+   },
+   "m": {
+    "file": "assets/img/conifer-lunar-new-year-m.jpg",
+    "w": 640,
+    "h": 1317,
+    "kb": 148.0
+   }
+  }
+ },
+ "conifer-winter-solstice": {
+  "src": "assets/work/conifer-winter-solstice.jpg",
+  "w": 729,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/conifer-winter-solstice-s.jpg",
+    "w": 400,
+    "h": 823,
+    "kb": 45.7
+   },
+   "m": {
+    "file": "assets/img/conifer-winter-solstice-m.jpg",
+    "w": 640,
+    "h": 1317,
+    "kb": 96.7
+   }
+  }
+ },
+ "conifer-xiaoshu": {
+  "src": "assets/work/conifer-xiaoshu.jpg",
+  "w": 770,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/conifer-xiaoshu-s.jpg",
+    "w": 400,
+    "h": 779,
+    "kb": 43.0
+   },
+   "m": {
+    "file": "assets/img/conifer-xiaoshu-m.jpg",
+    "w": 640,
+    "h": 1247,
+    "kb": 97.0
+   }
+  }
+ },
+ "huayu-qixi": {
+  "src": "assets/work/huayu-qixi.jpg",
+  "w": 798,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/huayu-qixi-s.jpg",
+    "w": 400,
+    "h": 752,
+    "kb": 70.7
+   },
+   "m": {
+    "file": "assets/img/huayu-qixi-m.jpg",
+    "w": 640,
+    "h": 1203,
+    "kb": 157.0
+   }
+  }
+ },
+ "huayu-summer-solstice": {
+  "src": "assets/work/huayu-summer-solstice.jpg",
+  "w": 1500,
+  "h": 833,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/huayu-summer-solstice-s.jpg",
+    "w": 400,
+    "h": 222,
+    "kb": 24.6
+   },
+   "m": {
+    "file": "assets/img/huayu-summer-solstice-m.jpg",
+    "w": 640,
+    "h": 355,
+    "kb": 54.3
+   },
+   "l": {
+    "file": "assets/img/huayu-summer-solstice-l.jpg",
+    "w": 960,
+    "h": 533,
+    "kb": 106.1
+   }
+  }
+ },
+ "huayu-valentines-la-floret": {
+  "src": "assets/work/huayu-valentines-la-floret.jpg",
+  "w": 1080,
+  "h": 1494,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/huayu-valentines-la-floret-s.jpg",
+    "w": 400,
+    "h": 553,
+    "kb": 62.0
+   },
+   "m": {
+    "file": "assets/img/huayu-valentines-la-floret-m.jpg",
+    "w": 640,
+    "h": 885,
+    "kb": 135.8
+   },
+   "l": {
+    "file": "assets/img/huayu-valentines-la-floret-l.jpg",
+    "w": 960,
+    "h": 1328,
+    "kb": 252.8
+   }
+  }
+ },
+ "palace-blue-because-love-you": {
+  "src": "assets/work/palace-blue-because-love-you.jpg",
+  "w": 856,
+  "h": 252,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/palace-blue-because-love-you-s.jpg",
+    "w": 400,
+    "h": 118,
+    "kb": 8.6
+   },
+   "m": {
+    "file": "assets/img/palace-blue-because-love-you-m.jpg",
+    "w": 640,
+    "h": 188,
+    "kb": 16.0
+   }
+  }
+ },
+ "palace-ocean-valentines": {
+  "src": "assets/work/palace-ocean-valentines.jpg",
+  "w": 1080,
+  "h": 1494,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/palace-ocean-valentines-s.jpg",
+    "w": 400,
+    "h": 553,
+    "kb": 49.9
+   },
+   "m": {
+    "file": "assets/img/palace-ocean-valentines-m.jpg",
+    "w": 640,
+    "h": 885,
+    "kb": 113.2
+   },
+   "l": {
+    "file": "assets/img/palace-ocean-valentines-l.jpg",
+    "w": 960,
+    "h": 1328,
+    "kb": 217.4
+   }
+  }
+ },
+ "photo-bamboo": {
+  "src": "assets/work/photo-bamboo.jpg",
+  "w": 992,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/photo-bamboo-s.jpg",
+    "w": 400,
+    "h": 605,
+    "kb": 63.5
+   },
+   "m": {
+    "file": "assets/img/photo-bamboo-m.jpg",
+    "w": 640,
+    "h": 968,
+    "kb": 141.9
+   }
+  }
+ },
+ "photo-pool-portrait": {
+  "src": "assets/work/photo-pool-portrait.jpg",
+  "w": 993,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/photo-pool-portrait-s.jpg",
+    "w": 400,
+    "h": 604,
+    "kb": 57.3
+   },
+   "m": {
+    "file": "assets/img/photo-pool-portrait-m.jpg",
+    "w": 640,
+    "h": 967,
+    "kb": 124.1
+   }
+  }
+ },
+ "photo-qipao-rockery": {
+  "src": "assets/work/photo-qipao-rockery.jpg",
+  "w": 1000,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/photo-qipao-rockery-s.jpg",
+    "w": 400,
+    "h": 600,
+    "kb": 59.4
+   },
+   "m": {
+    "file": "assets/img/photo-qipao-rockery-m.jpg",
+    "w": 640,
+    "h": 960,
+    "kb": 131.9
+   }
+  }
+ },
+ "photo-stairs": {
+  "src": "assets/work/photo-stairs.jpg",
+  "w": 843,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/photo-stairs-s.jpg",
+    "w": 400,
+    "h": 712,
+    "kb": 55.2
+   },
+   "m": {
+    "file": "assets/img/photo-stairs-m.jpg",
+    "w": 640,
+    "h": 1139,
+    "kb": 121.9
+   }
+  }
+ },
+ "primus-double11-quiet": {
+  "src": "assets/work/primus-double11-quiet.jpg",
+  "w": 843,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-double11-quiet-s.jpg",
+    "w": 400,
+    "h": 712,
+    "kb": 38.5
+   },
+   "m": {
+    "file": "assets/img/primus-double11-quiet-m.jpg",
+    "w": 640,
+    "h": 1139,
+    "kb": 88.0
+   }
+  }
+ },
+ "primus-double11-travel": {
+  "src": "assets/work/primus-double11-travel.jpg",
+  "w": 843,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-double11-travel-s.jpg",
+    "w": 400,
+    "h": 712,
+    "kb": 46.5
+   },
+   "m": {
+    "file": "assets/img/primus-double11-travel-m.jpg",
+    "w": 640,
+    "h": 1139,
+    "kb": 111.8
+   }
+  }
+ },
+ "primus-fresh-air": {
+  "src": "assets/work/primus-fresh-air.jpg",
+  "w": 843,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-fresh-air-s.jpg",
+    "w": 400,
+    "h": 712,
+    "kb": 49.4
+   },
+   "m": {
+    "file": "assets/img/primus-fresh-air-m.jpg",
+    "w": 640,
+    "h": 1139,
+    "kb": 119.3
+   }
+  }
+ },
+ "primus-singles-day": {
+  "src": "assets/work/primus-singles-day.jpg",
+  "w": 843,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-singles-day-s.jpg",
+    "w": 400,
+    "h": 712,
+    "kb": 45.7
+   },
+   "m": {
+    "file": "assets/img/primus-singles-day-m.jpg",
+    "w": 640,
+    "h": 1139,
+    "kb": 101.3
+   }
+  }
+ },
+ "primus-world-sleep-day": {
+  "src": "assets/work/primus-world-sleep-day.jpg",
+  "w": 916,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-world-sleep-day-s.jpg",
+    "w": 400,
+    "h": 655,
+    "kb": 53.2
+   },
+   "m": {
+    "file": "assets/img/primus-world-sleep-day-m.jpg",
+    "w": 640,
+    "h": 1048,
+    "kb": 117.1
+   }
+  }
+ },
+ "social-enjoy-your-life": {
+  "src": "assets/work/social-enjoy-your-life.jpg",
+  "w": 720,
+  "h": 1280,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/social-enjoy-your-life-s.jpg",
+    "w": 400,
+    "h": 711,
+    "kb": 38.6
+   },
+   "m": {
+    "file": "assets/img/social-enjoy-your-life-m.jpg",
+    "w": 640,
+    "h": 1138,
+    "kb": 78.5
+   }
+  }
+ },
+ "social-have-a-good-rest": {
+  "src": "assets/work/social-have-a-good-rest.jpg",
+  "w": 720,
+  "h": 1280,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/social-have-a-good-rest-s.jpg",
+    "w": 400,
+    "h": 711,
+    "kb": 36.8
+   },
+   "m": {
+    "file": "assets/img/social-have-a-good-rest-m.jpg",
+    "w": 640,
+    "h": 1138,
+    "kb": 78.3
+   }
+  }
+ },
+ "social-relax": {
+  "src": "assets/work/social-relax.jpg",
+  "w": 720,
+  "h": 1280,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/social-relax-s.jpg",
+    "w": 400,
+    "h": 711,
+    "kb": 32.3
+   },
+   "m": {
+    "file": "assets/img/social-relax-m.jpg",
+    "w": 640,
+    "h": 1138,
+    "kb": 64.8
+   }
+  }
+ },
+ "social-this-is-my-holiday": {
+  "src": "assets/work/social-this-is-my-holiday.jpg",
+  "w": 720,
+  "h": 1280,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/social-this-is-my-holiday-s.jpg",
+    "w": 400,
+    "h": 711,
+    "kb": 61.6
+   },
+   "m": {
+    "file": "assets/img/social-this-is-my-holiday-m.jpg",
+    "w": 640,
+    "h": 1138,
+    "kb": 136.1
+   }
+  }
+ },
+ "swissotel-double-ninth": {
+  "src": "assets/work/swissotel-double-ninth.jpg",
+  "w": 843,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/swissotel-double-ninth-s.jpg",
+    "w": 400,
+    "h": 712,
+    "kb": 53.8
+   },
+   "m": {
+    "file": "assets/img/swissotel-double-ninth-m.jpg",
+    "w": 640,
+    "h": 1139,
+    "kb": 124.5
+   }
+  }
+ },
+ "swissotel-thanksgiving": {
+  "src": "assets/work/swissotel-thanksgiving.jpg",
+  "w": 843,
+  "h": 1500,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/swissotel-thanksgiving-s.jpg",
+    "w": 400,
+    "h": 712,
+    "kb": 64.6
+   },
+   "m": {
+    "file": "assets/img/swissotel-thanksgiving-m.jpg",
+    "w": 640,
+    "h": 1139,
+    "kb": 150.9
+   }
+  }
+ },
+ "conifer-floating-tea-poster": {
+  "src": "assets/video/conifer-floating-tea-poster.jpg",
+  "w": 720,
+  "h": 960,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/conifer-floating-tea-poster-s.jpg",
+    "w": 400,
+    "h": 533,
+    "kb": 30.4
+   },
+   "m": {
+    "file": "assets/img/conifer-floating-tea-poster-m.jpg",
+    "w": 640,
+    "h": 853,
+    "kb": 61.8
+   }
+  }
+ },
+ "conifer-hotel-tour-poster": {
+  "src": "assets/video/conifer-hotel-tour-poster.jpg",
+  "w": 720,
+  "h": 406,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/conifer-hotel-tour-poster-s.jpg",
+    "w": 400,
+    "h": 226,
+    "kb": 24.0
+   },
+   "m": {
+    "file": "assets/img/conifer-hotel-tour-poster-m.jpg",
+    "w": 640,
+    "h": 361,
+    "kb": 51.3
+   }
+  }
+ },
+ "illustration-cafe-poster": {
+  "src": "assets/video/illustration-cafe-poster.jpg",
+  "w": 720,
+  "h": 960,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/illustration-cafe-poster-s.jpg",
+    "w": 400,
+    "h": 533,
+    "kb": 59.7
+   },
+   "m": {
+    "file": "assets/img/illustration-cafe-poster-m.jpg",
+    "w": 640,
+    "h": 853,
+    "kb": 130.0
+   }
+  }
+ },
+ "primus-christmas-motion-poster": {
+  "src": "assets/video/primus-christmas-motion-poster.jpg",
+  "w": 720,
+  "h": 1248,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-christmas-motion-poster-s.jpg",
+    "w": 400,
+    "h": 693,
+    "kb": 35.4
+   },
+   "m": {
+    "file": "assets/img/primus-christmas-motion-poster-m.jpg",
+    "w": 640,
+    "h": 1109,
+    "kb": 61.9
+   }
+  }
+ },
+ "primus-motion-loop-poster": {
+  "src": "assets/video/primus-motion-loop-poster.jpg",
+  "w": 720,
+  "h": 1200,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-motion-loop-poster-s.jpg",
+    "w": 400,
+    "h": 667,
+    "kb": 9.5
+   },
+   "m": {
+    "file": "assets/img/primus-motion-loop-poster-m.jpg",
+    "w": 640,
+    "h": 1067,
+    "kb": 17.1
+   }
+  }
+ },
+ "primus-new-year-motion-poster": {
+  "src": "assets/video/primus-new-year-motion-poster.jpg",
+  "w": 720,
+  "h": 1186,
+  "derivatives": {
+   "s": {
+    "file": "assets/img/primus-new-year-motion-poster-s.jpg",
+    "w": 400,
+    "h": 659,
+    "kb": 38.4
+   },
+   "m": {
+    "file": "assets/img/primus-new-year-motion-poster-m.jpg",
+    "w": 640,
+    "h": 1054,
+    "kb": 71.2
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# 无入口链接的占位页，先排除在收录之外
+Disallow: /campaigns.html
+Disallow: /links.html
+Disallow: /videos.html
+
+# 上线后把下面一行改成真实域名并去掉注释
+# Sitemap: https://your-domain.com/sitemap.xml
